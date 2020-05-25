@@ -38,7 +38,7 @@
 			    <section class="contacts">
 					<h1 class="visibility-hidden">Контакты</h1>
 					<div class="telephone">
-						<a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+						<a href="tel:+78125550555">+7(812)555-05-55</a>
 					</div>
 					<div class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</div>
 				</section>			
@@ -49,7 +49,7 @@
 				</section>
 			</section>
 			<section class="navigation">
-				<h1 class="visibility-hidden">новигация по сайту</h1>
+				<h1 class="visibility-hidden">навигация по сайту</h1>
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -78,8 +78,8 @@
 			</section>
 		</header>
 		<main>
-			<section class="offers">
-				<h1 class="visibility-hidden">Интернет-магазин «Техномарт»</h1>
+			<h1 class="visibility-hidden">Интернет-магазин «Техномарт»</h1>
+			<section class="offers">				
 				<h2 class="visibility-hidden">разделы интернет-магазина</h2>
 				<article class="category-1 new">
 					<h3>Материалы</h3>					
@@ -101,8 +101,8 @@
 					<h3>Доставка</h3>					
 					<a href="#">бесплатно</a>
 				</article>
-				<div class="slider">
-					<h1 class="visibility-hidden">Слайдер</h1>
+				<section class="slider">
+					<h1 class="visibility-hidden">Галерея разделов</h1>
 					<article class="slider-1">
 						<h2>Перфораторы</h2>
 						<p>Настоящие мужские игрушки</p>	
@@ -119,7 +119,7 @@
 					<button class="arrow-right"></button>
 					<span class="dot-left"></span>
 					<span class="dot-right"></span>
-				</div>
+				</section>
 			</section>
 			<div class="popular">
 				<h2>популярные товары:</h2>
@@ -147,7 +147,7 @@
 					<a href="#"> <!-- ссылка в карточку товара -->
 						<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 3000">
 					</a>
-					<div> 22500 Р.</div>
+					<div class="oldprice" aria-label="старая цена"> 22500 Р.</div>
 					<a class="btn" href="#" aria-label="купить за">15500 Р.</a>
 				</article>
 				<article>
@@ -228,13 +228,13 @@
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<ul> 
 					<li>
-						<button>Доставка</button>
+						<button type="button">Доставка</button>
 					</li>
 					<li>											
-						<button>Гарантия</button>
+						<button type="button">Гарантия</button>
 					</li>
 					<li>
-						<button>Кредит</button>
+						<button type="button">Кредит</button>
 					</li>
 				</ul>
 				<div class="delivery">
@@ -274,7 +274,9 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами,
 					заехав в наш офис:</p>
-					<img src="img/content/map.png" width="300" height="158" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">					
+					<a href="img/content/map_popup.png">
+						<img src="img/content/map.png" width="300" height="158" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+					</a>
 					<a href="#">Заблудились? Напишите нам!</a>					
 				</div>
 			</section>
@@ -287,7 +289,7 @@
 			</div>
 			<div class="contacts">
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					<a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+					<a href="tel:+78125550555">+7(812)555-05-55</a>
 				</p>
 			</div>
 			<nav class="navigation-footer">
@@ -352,33 +354,32 @@
 		</footer>
 		<section class="modal-widow-map">
 			<h1 class="visibility-hidden">Карта адреса</h1>
-			<img src="img/content/map_popup.png" width="1736" height="779" alt="карта с адресом офиса в крупном формате">
-			<button class="close-map" aria-label="закрыть карту"></button>
+			<img src="img/content/map_popup.png" width="1736" height="779" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<button type="button" class="close-map" aria-label="закрыть карту"></button>
 		</section>
 		<section class="write-us-modal">
 			<h1 class="visibility-hidden">Форма обратной связи</h1>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<label>Ваше имя:<input type="text" name="first-last-name" placeholder="Имя Фамилия"></label>
 				<label>Ваш e-mail:<input type="email" name="mail" placeholder="email@example.com"></label>
-				<p>Текст письма:</p>
-				<textarea name="writing-letters" id="letters-field">
-					<label>letters-field</label>
+				<p><label>Текст письма:</label></p>
+				<textarea name="writing-letters" id="letters-field" placeholder="В свободной форме">
 					В свободной форме
-				</textarea>
+				</textarea>				
 				<div class="grey-box">
 					<button type="submit">Отправить</button>
-				</div>
-				<button class="close-modal" aria-label="закрыть форму"></button>
-			</form>					
+				</div>				
+			</form>	
+			<button type="button" class="close-modal" aria-label="закрыть форму"></button>
 		</section>
 		<section class="modal-window-basket">
 			<h1 class="visibility-hidden">Добавление товара в корзину</h1>
 			<p>Товар добавлен в корзину!</p>
 			<div class="grey-box">
 				<a href="#">Оформить заказ</a>
-				<button>Продолжить покупки</button>
+				<button type="button">Продолжить покупки</button>
 			</div>
-			<button class="close-modal">закрыть</button>
+			<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
 		</section>
 	</body>
 </html>

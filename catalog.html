@@ -37,7 +37,7 @@
 				<p>Интернет магазин стороительных материалов и инструментов для ремонта</p>
 				<section class="contacts">
 					<div class="telephone">
-						<a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+						<a href="tel:+78125550555">+7(812)555-05-55</a>
 					</div>
 					<div class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</div>
 				</section>
@@ -60,6 +60,7 @@
 				</section>
 			</section>
 			<section class="navigation">
+				<h1 class="visibility-hidden">навигация по сайту</h1>
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -89,6 +90,7 @@
 		</header>
 		<main>
 			<section class="breadcrumbs">
+				<span class="visually-hidden">навигация по страницам</span>
 				<ul>
 					<li>
 						<a href="#"></a> <!-- иконка "домой" -->
@@ -168,10 +170,10 @@
 							<a href="#">по функционалу</a>
 						</li>
 						<li>
-							<a href="#" class="arrow-up"></a>
+							<a href="#" class="arrow-up" aria-label="листать вверх"></a>
 						</li>
 						<li>
-							<a href="#" class="arrow-down"></a>
+							<a href="#" class="arrow-down" aria-label="листать вниз"></a>
 						</li>
 					</ul>
 				</div>
@@ -282,21 +284,21 @@
 					</article>
 				</section>
 				<div class="page">
-				<h2 class="visibility-hidden">Постраничная навигация</h2>
-				<ul>
-					<li>
-						<a>1</a>
-					</li>
-					<li>
-						<a href="#">2</a>
-					</li>
-					<li>
-						<a href="#">3</a>
-					</li>
-					<li>
-						<a href="#">следующая</a>
-					</li>
-				</ul>	
+					<h2 class="visibility-hidden">Постраничная навигация</h2>
+					<ul>
+						<li>
+							<a>1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">следующая</a>
+						</li>
+					</ul>	
 				</div>
 			</section>
 			<article class="about-goods">
@@ -314,7 +316,7 @@
 			</div>
 			<div class="contacts">
 				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					<a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+					<a href="tel:+78125550555">+7(812)555-05-55</a>
 				</p>
 			</div>
 			<nav class="navigation-footer">
@@ -378,13 +380,13 @@
 			</div>
 		</footer>						
 		<section class="modal-window-basket">
-		<h1 class="visibility-hidden">Добавление товара в корзину</h1>
+			<h1 class="visibility-hidden">Добавление товара в корзину</h1>
 			<p>Товар добавлен в корзину!</p>
 			<div class="grey-box">
 				<a href="#">Оформить заказ</a>
-				<button>Продолжить покупки</button>
+				<button type="button">Продолжить покупки</button>
 			</div>
-			<button class="close-modal">закрыть</button>
+			<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
 		</section>
 	</body>
 </html>	
