@@ -11,6 +11,10 @@
 	--basic-black: #000000;
 	--basic-purple: #32425C;
 	--basic-red: #EE3643;
+	--basic-blue: #32425C;
+	--basic-dark-blue: #293449;
+	--basic-orange: #FFD180;
+	--basic-light-blue: #F1F5F7;
 }
 body {
 	min-width: 1220px;
@@ -19,14 +23,222 @@ body {
 	font-family: "Cuprum", "PT Sans";
 }
 img{
-	max-width: 100% 
+	max-width: 100%;
+}
+a {
+	color: var(--basic-white);
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	font-style: normal;
+}
+li {
+	list-style-type: none;
+}
+.visibility-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 header{
-	background-color: #F1F5F7;
+	background-color: var(--basic-light-blue);
+	
 }
 .logo-header {
 	background-color: var(--basic-red);
 }
 .top-row {
+	background-color: var(--basic-dark-blue);
+	color: var(--basic-white);
+}
+
+.info .telephone a {
+	color: var(--basic-red);
+	font-size: 21px;
+	line-height: 30px;
+	font-style: normal;
+    font-weight: bold;
+}
+.info p{
+	color: var(--basic-red);
+	font-style: italic;
+}
+.address {
+	color: var(--basic-purple);
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Cuprum;
+	font-style: normal;
+	font-weight: normal;
+}
+button {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 21px;
+}
+nav {
+	background-color: var(--basic-blue);
 	
+}
+
+.info-company h2 {
+	color: var(--basic-black);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+}
+.info-company p {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+}
+.partners li:before {
+    content:  "—";
+    position: relative;
+    left:     -5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+.info-company a {
+	background-color: var(--basic-red);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+footer {
+	background-color: var(--basic-blue);
+}
+
+
+.logo-footer {
+	background-color: var(--basic-red);
+}
+.contacts a, p {
+	color: var(--basic-white);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+.bottom-list a {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--basic-orange);
+}
+.down-row {
+	background-color: var(--basic-dark-blue);
+}
+.modal-widow-map,
+.write-us-modal,
+.grey-box, 
+.close-modal {
+	display: none;
+}
+
+.down-row p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+}
+.feedback a {
+	color: var(--basic-orange);
+}
+
+.breadcrumbs a {
+	color: var(--basic-black);
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+.user-account a{
+	color: var(--basic-black);
+}
+.main-content h1 {
+	background-color: var(--basic-light-blue);
+	color: var(--basic-purple);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+}
+legend {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+}
+.brand label,
+.battery-list label {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.tool-cards a {
+	color: var(--basic-black);
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+}
+.oldprice {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	color: #A9A9A9;
+	text-decoration-line: line-through;
+}
+a.btn {
+	background-color: var(--basic-red);
+	color: var(--basic-white);
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+}
+.about-goods {
+	background-color: var(--basic-light-blue);	
+}
+.about-goods h2 {	
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.about-goods p {
+	color: var(--basic-black);
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
 }
