@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Cuprum';
+	src: url ('fonts/web/cuprum.woff2') format('woff2');
+	src: url ('fonts/web/cuprum.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-black: #000000;
+	--basic-purple: #32425C;
+	--basic-red: #EE3643;
+}
+body {
+	min-width: 1220px;
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", "PT Sans";
+}
+img{
+	max-width: 100% 
+}
+header{
+	background-color: #F1F5F7;
+}
+.logo-header {
+	background-color: var(--basic-red);
+}
+.top-row {
+	
+}
