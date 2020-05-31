@@ -9,9 +9,9 @@
 	<body>
 		<header>
 			<section class="top-row">						
-					<a class="logo-header">
-						 <img src="img/logo/logo-technomart.svg" width="107" height="17" alt="логотип Техномарт"> 										
-				</div>				
+				<a class="logo-header">
+					<img src="img/logo/logo-technomart.svg" width="107" height="17" alt="логотип Техномарт">
+				</a>	 
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
 						<legend class="visually-hidden">Форма поиска</legend>
@@ -21,15 +21,15 @@
 						</label>
 					</fieldset>
 				</form>
-				<ul>
+				<ul class="link-header">
 					<li>
-						<a href="#">Закладки: 0</a>
+						<a class="white-link" href="#">Закладки: 0</a>
 					</li>
 					<li>
-						<a href="#">Корзина: 0</a>
+						<a class="white-link" href="#">Корзина: 0</a>
 					</li>
 					<li>
-						<a href="#">Оформить заказ</a>
+						<a class="btn-reservation" href="#">Оформить заказ</a>
 					</li>
 				</ul>				
 			</section>
@@ -44,14 +44,14 @@
 				</section>			
 				<section class="user-account">
 					<h1 class="visibility-hidden">личный кабинет</h1>
-					<button type="button">Войти</button>
-					<button type="button">Регистрация</button>
+					<button type="button" class="login">Войти</button>
+					<button type="button" class="registration">Регистрация</button>
 				</section>
 			</section>
 			<section class="navigation">
 				<h1 class="visibility-hidden">навигация по сайту</h1>
 				<nav class="main-navigation">
-					<ul>
+					<ul class="link-navigation">
 						<li>
 							<a href="#">Главная</a>
 						</li>
@@ -257,40 +257,37 @@
 			</section>
 			<section class="info-company">
 				<div class="about-company">
-					<h2>Компания «Техномарт»</h2>
-					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
+					<h2 class="subtitle">Компания «Техномарт»</h2>
+					<p class="text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
 						для ремонта и строительства не оставит равнодушными любителей сэкономить на
 					гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+					<p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многими транспортными компаниями:</p>
 					<ul class="partners">
 						<li>Деловые линии</li>
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="#">Подробнее о компании</a>
+					<a class="subject" href="#">Подробнее о компании</a>
 				</div>
 				<div class="map-address">
-					<h2>Контакты</h2>
-					<p>Вы можете забрать товар сами,
+					<h2 class="subtitle">Контакты</h2>
+					<p class="text">Вы можете забрать товар сами,
 					заехав в наш офис:</p>
 					<a href="img/content/map_popup.png">
 						<img src="img/content/map.png" width="300" height="158" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 					</a>
-					<a href="#">Заблудились? Напишите нам!</a>					
+					<a class="subject" href="#">Заблудились? Напишите нам!</a>					
 				</div>
 			</section>
 		</main>
-		<footer>
-			<div class="logo-footer">			
-				<a>
-					<img src="img/logo/logo-technomart.svg" width="136" height="22" alt="логотип Техномарт"> 
-				</a>
-			</div>
+		<footer>			
+			<a class="logo-footer">
+				<img src="img/logo/logo-technomart.svg" width="136" height="22" alt="логотип Техномарт"> 
+			</a>		
 			<div class="contacts">
-				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					<a href="tel:+78125550555">+7(812)555-05-55</a>
-				</p>
+				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
 			</div>
 			<nav class="navigation-footer">
 				<ul class="top-list">
@@ -326,27 +323,27 @@
 				</ul>
 			</nav>
 			<div class="down-row">
-				<p>© 2010–2019 Компания «Техномарт»
+				<p class="small-text">© 2010–2019 Компания «Техномарт»
 				Все права защищены</p>
 				<section class="social-web">
 					<h1 class="visibility-hidden">Мы в социальных сетях</h1>
-					<ul>
+					<ul class="list-icons">
 						<li>
-							<a href="#" target="_blank"><span class="visually-hidden">вконтакте</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><span class="visually-hidden">фейсбук</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><span class="visually-hidden">инстаграмм</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
 						</li>
 					</ul>
 				</section>
 				<section class="feedback">
-					<p>Обратная связь:
+					<p class="small-text">Обратная связь:
 						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
-					<p>Разработано - 
+					<p class="small-text">Разработано - 
 						<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
 					</p>
 				</section>
@@ -373,7 +370,7 @@
 		</section>
 		<section class="modal-window-basket">
 			<h1 class="visibility-hidden">Добавление товара в корзину</h1>
-			<p>Товар добавлен в корзину!</p>
+			<p class="success">Товар добавлен в корзину!</p>
 			<div class="grey-box">
 				<a href="#">Оформить заказ</a>
 				<button type="button">Продолжить покупки</button>

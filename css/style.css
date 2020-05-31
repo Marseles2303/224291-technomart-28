@@ -1,31 +1,31 @@
 @font-face {
 	font-family: 'Cuprum';
-	src: url ('../fonts/Cuprum/cuprum.woff2') format('woff2'),
-	url ('../fonts/Cuprum/cuprum.woff') format('woff');
+	src: url('../fonts/cuprum/cuprum.woff2') format('woff2'),
+	url('../fonts/cuprum/cuprum.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }	
 
 @font-face {
 	font-family: 'Cuprum';
-	src: url ('../fonts/Cuprum/cuprumitalic.woff2') format('woff2'),
-	url ('../fonts/Cuprum/cuprumitalic.woff') format('woff');
+	src: url('../fonts/cuprum/cuprumitalic.woff2') format('woff2'),
+	url('../fonts/cuprum/cuprumitalic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Cuprum';
-	src: url ('../fonts/Cuprum/cuprumbold.woff2') format('woff2'),
-	url ('../fonts/Cuprum/cuprumbold.woff') format('woff');
+	src: url('../fonts/cuprum/cuprumbold.woff2') format('woff2'),
+	url('../fonts/cuprum/cuprumbold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'PT Sans';
-	src: url ('../fonts/PTSans/ptsans.woff2') format('woff2'),
-	url ('../fonts/PTSans/ptsans.woff') format('woff');
+	src: url('../fonts/ptsans/ptsans.woff2') format('woff2'),
+	url('../fonts/ptsans/ptsans.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;  
 }
@@ -42,19 +42,21 @@
 	--basic-green: #63A63E;
 	--basic-gray: #A9A9A9;
 }
+
 body {
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", "PT Sans" "Tahoma"; sans-serif; 
+	font-family: "Cuprum", "PT Sans" "Tahoma", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: var(--basic-white);
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 }
-
-
 
 .visibility-hidden {
 	position: absolute;
@@ -66,162 +68,230 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-header{
-	background-color: var(--basic-light-blue);
-	
+
+header {
+	background-color: var(--basic-light-blue);	
 }
+
 a.logo-header {
 	background-color: var(--basic-red);
 }
+
 .top-row {
 	background-color: var(--basic-dark-blue);
 	color: var(--basic-white);
 }
 
+.label-search {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a.white-link {
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+a.btn-reservation {
+	color: var(--basic-white);
+	background-color: var(--basic-green);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.link-header,
+.link-navigation,
+.top-list,
+.bottom-list,
+.list-icons,
+.items-user{
+	list-style-type: none;
+}
+
 .info .telephone a {
 	color: var(--basic-red);
-font-size: 21px;
-line-height: 30px;
-font-weight: bold;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+	text-decoration: none;
 }
-.info p{
+
+.info p {
 	color: var(--basic-red);
 	font-style: italic;
 }
+
 .address {
 	color: var(--basic-purple);
 	font-size: 14px;
 	line-height: 24px;
-	
-}
-button {
-	color: var(--basic-black);
-	background-color: var(--basic-white);
-	border: none;
-	font-size: 21px;
-	line-height: 21px;
-}
-nav {
-	background-color: var(--basic-blue);
-	
 }
 
-.info-company h2 {
+.login,
+.registration,
+.loged {
+	border: none;
+	background-color: var(--basic-white);
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+	text-decoration: none;
+}
+
+nav {
+	background-color: var(--basic-blue);	
+}
+
+.link-navigation a,
+.top-list a {
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.subtitle {
 	font-family: Cuprum;
 	text-transform: uppercase;
 	color: var(--basic-black);
 	font-size: 30px;
 	line-height: 30px;
 }
-.info-company p {
+
+.text {
+	color: var(--basic-black);
 	font-family: PT Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
 }
+
+.partners li {
+	list-style-type: none;
+}
+
 .partners li:before {
     content:  "—";
     position: relative;
     left:     -5px;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-	}
-	.info-company a {
+}
+
+.subject {
+	color: var(--basic-white);
 	background-color: var(--basic-red);
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
-	text-align: center;
 	text-transform: uppercase;
-	}
-	footer {
+	text-decoration: none;
+}
+
+footer {
 	background-color: var(--basic-blue);
-	}
-	
-	
-	.logo-footer {
+}
+
+.logo-footer {
 	background-color: var(--basic-red);
-	}
-	.contacts a, p {
+}
+
+.footer-address {
 	color: var(--basic-white);
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-	}
-	.bottom-list a {
+}
+
+.tel {
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.bottom-list a {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-orange);
-	}
-	.down-row {
+}
+
+.down-row {
 	background-color: var(--basic-dark-blue);
-	}
-	.modal-widow-map,
-	.write-us-modal,
-	.grey-box, 
-	.close-modal {
+}
+.modal-widow-map,
+.write-us-modal,
+.grey-box, 
+.close-modal,
+.success{
 	display: none;
-	}
-	
-	.down-row p {
-	font-style: normal;
-	font-weight: normal;
+}
+
+.small-text {
 	font-size: 16px;
 	line-height: 18px;
-	}
-	.feedback a {
+	color: var(--basic-white);
+}
+.feedback a {
 	color: var(--basic-orange);
-	}
-	
-	.breadcrumbs a {
+}
+
+.orders,
+.cabinet {
+	color: var(--basic-blue);
+	font-size: 16px;
+    line-height: 18px;
+	text-decoration: none;
+}
+
+.breadcrumbs a {
 	color: var(--basic-black);
 	font-family: PT Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
-	}
-	.user-account a{
+}
+
+.user-account a {
 	color: var(--basic-black);
-	}
-	.main-content h1 {
+}
+
+.main-content h1 {
 	background-color: var(--basic-light-blue);
 	color: var(--basic-purple);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
-	}
-	legend {
+}
+
+legend {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
-	}
-	.brand label,
-	.battery-list label {
-	font-style: normal;
-	font-weight: normal;
+}
+
+.brand label,
+.battery-list label {
 	font-size: 15px;
 	line-height: 19px;
 	text-transform: uppercase;
-	}
-	.tool-cards a {
+}
+
+.tool-cards a {
 	color: var(--basic-black);
 	font-family: PT Sans;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
-	}
-	.oldprice {
+}
+
+.oldprice {
 	font-family: PT Sans;
 	font-style: normal;
 	font-weight: bold;
@@ -229,8 +299,9 @@ nav {
 	line-height: 18px;
 	color: #A9A9A9;
 	text-decoration-line: line-through;
-	}
-	a.btn {
+}
+
+a.btn {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 	font-family: PT Sans;
@@ -238,22 +309,25 @@ nav {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
-	}
-	.about-goods {
+}
+
+.about-goods {
 	background-color: var(--basic-light-blue);	
-	}
-	.about-goods h2 {	
+}
+
+.about-goods h2 {	
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	}
-	.about-goods p {
+}
+
+.about-goods p {
 	color: var(--basic-black);
 	font-family: PT Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 24px;
-	}		
+}	
