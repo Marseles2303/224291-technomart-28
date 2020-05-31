@@ -5,6 +5,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'PT Sans';
+	src: url ('../fonts/PTSans/ptsans.woff2') format('woff'),
+         url ('../fonts/PTSans/ptsans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 :root {
 	--basic-white: #FFFFFF;
