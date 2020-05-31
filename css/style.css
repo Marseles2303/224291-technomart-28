@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Cuprum';
-	src: url ('fonts/web/cuprum.woff2') format('woff2');
-	src: url ('fonts/web/cuprum.woff') format('woff');
+	src: url ('../fonts/Cuprum/cuprum.woff2') format('woff'),
+         url ('../fonts/Cuprum/cuprum.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,22 +20,15 @@ body {
 	min-width: 1220px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", "PT Sans";
+	font-family: "Cuprum", "PT Sans"; "Tahoma"; sans-serif; 
 }
-img{
+img {
 	max-width: 100%;
+	height: auto;
 }
-a {
-	color: var(--basic-white);
-	text-decoration: none;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: normal;
-	font-style: normal;
-}
-li {
-	list-style-type: none;
-}
+
+
+
 .visibility-hidden {
 	position: absolute;
 	width: 1px;
@@ -62,7 +55,6 @@ header{
 	color: var(--basic-red);
 	font-size: 21px;
 	line-height: 30px;
-	font-style: normal;
     font-weight: bold;
 }
 .info p{
@@ -73,16 +65,12 @@ header{
 	color: var(--basic-purple);
 	font-size: 14px;
 	line-height: 24px;
-	font-family: Cuprum;
-	font-style: normal;
-	font-weight: normal;
+
 }
 button {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	border: none;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 21px;
 	line-height: 21px;
 }
@@ -92,9 +80,9 @@ nav {
 }
 
 .info-company h2 {
+	font-family: Cuprum;
+	text-transform: uppercase;
 	color: var(--basic-black);
-	font-style: normal;
-	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 }
