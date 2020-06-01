@@ -1,31 +1,31 @@
 @font-face {
-	font-family: 'Cuprum';
-	src: url('../fonts/cuprum/cuprum.woff2') format('woff2'),
-	url('../fonts/cuprum/cuprum.woff') format('woff');
+	font-family: "Cuprum";
+	src: url("../fonts/cuprum/cuprum.woff2") format("woff2"),
+	url("../fonts/cuprum/cuprum.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }	
 
 @font-face {
-	font-family: 'Cuprum';
-	src: url('../fonts/cuprum/cuprumitalic.woff2') format('woff2'),
-	url('../fonts/cuprum/cuprumitalic.woff') format('woff');
+	font-family: "Cuprum";
+	src: url("../fonts/cuprum/cuprumitalic.woff2") format("woff2"),
+	url("../fonts/cuprum/cuprumitalic.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Cuprum';
-	src: url('../fonts/cuprum/cuprumbold.woff2') format('woff2'),
-	url('../fonts/cuprum/cuprumbold.woff') format('woff');
+	font-family: "Cuprum";
+	src: url("../fonts/cuprum/cuprumbold.woff2") format("woff2"),
+	url("../fonts/cuprum/cuprumbold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PT Sans';
-	src: url('../fonts/ptsans/ptsans.woff2') format('woff2'),
-	url('../fonts/ptsans/ptsans.woff') format('woff');
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans/ptsans.woff2") format("woff2"),
+	url("../fonts/ptsans/ptsans.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;  
 }
@@ -47,10 +47,11 @@ body {
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", "PT Sans" "Tahoma", sans-serif;
+	font-family: "Cuprum", "PT Sans", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	background-color: var(--basic-white);
+	color: var(--basic-black);
 }
 
 img {
@@ -69,11 +70,98 @@ img {
 	overflow: hidden;
 }
 
-header {
+/* кнопки */
+.btn-green {
+	background-color: var(--basic-green);
+	color: var(--basic-white);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.btn-reservation {
+	color: var(--basic-white);
+	background-color: var(--basic-green);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.user-btn {
+	border: none;
+	background-color: var(--basic-white);
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+	text-decoration: none;
+}
+
+.btn-transparent {
+	background-color: var(--basic-white);
+	color: var(--basic-white);
+	font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.btn-red {
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn-border-green {
+	background-color: var(--basic-white);
+	border: 1px solid #EAEAEA;
+	color: var(--basic-purple);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	
+}
+
+.btn-purchase {
+	background-color: var(--basic-red);
+	color: var(--basic-white);
+	font-family: "PT Sans", "Tahoma", "Arial";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.btn-white {
+	background-color: var(--basic-white);
+	border: 1px solid #E5E5E5;
+	color: var(--basic-black);
+	font-family: "PT Sans", "Tahoma", "Arial";
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.btn-cabinet {
+	color: var(--basic-blue);
+	font-size: 16px;
+    line-height: 18px;
+	text-decoration: none;
+}
+
+.blue-box {
 	background-color: var(--basic-light-blue);	
 }
 
-a.logo-header {
+.logo-header {
 	background-color: var(--basic-red);
 }
 
@@ -82,32 +170,26 @@ a.logo-header {
 	color: var(--basic-white);
 }
 
-.label-search {
+input[type="search"] {
+	background-color: var(--basic-dark-blue);	
+	border: 0;
 	font-size: 18px;
 	line-height: 24px;
 }
 
-a.white-link {
-	color: var(--basic-white);
-	font-size: 18px;
-	line-height: 24px;
-	text-decoration: none;
-}
-
-a.btn-reservation {
-	color: var(--basic-white);
-	background-color: var(--basic-green);
-	font-size: 18px;
-	line-height: 24px;
-	text-decoration: none;
+input[type="search"]::-webkit-input-placeholder {
+	color: var(--basic-white);	
 }
 
 .link-header,
-.link-navigation,
+.main-nav-list,
 .top-list,
 .bottom-list,
 .list-icons,
-.items-user{
+.items-user,
+.options-list,
+.nav-page,
+.page-items {
 	list-style-type: none;
 }
 
@@ -122,6 +204,8 @@ a.btn-reservation {
 .info p {
 	color: var(--basic-red);
 	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
 }
 
 .address {
@@ -130,22 +214,15 @@ a.btn-reservation {
 	line-height: 24px;
 }
 
-.login,
-.registration,
-.loged {
-	border: none;
-	background-color: var(--basic-white);
+.user-account a {
 	color: var(--basic-black);
-	font-size: 21px;
-	line-height: 21px;
-	text-decoration: none;
 }
 
-nav {
+.main-navigation {
 	background-color: var(--basic-blue);	
 }
 
-.link-navigation a,
+.main-nav-list a,
 .top-list a {
 	color: var(--basic-white);
 	font-size: 18px;
@@ -154,7 +231,7 @@ nav {
 }
 
 .subtitle {
-	font-family: Cuprum;
+	font-family: "Cuprum", "Tahoma", "Arial";
 	text-transform: uppercase;
 	color: var(--basic-black);
 	font-size: 30px;
@@ -163,7 +240,7 @@ nav {
 
 .text {
 	color: var(--basic-black);
-	font-family: PT Sans;
+	font-family: "PT Sans", "Tahoma", "Arial";
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -173,23 +250,15 @@ nav {
 }
 
 .partners li:before {
-    content:  "—";
+    content: "—";
+	color: var(--basic-black);
     position: relative;
-    left:     -5px;
+    left: -5px;
 	font-size: 18px;
 	line-height: 24px;
 }
 
-.subject {
-	color: var(--basic-white);
-	background-color: var(--basic-red);
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-footer {
+.box-dark-blue {
 	background-color: var(--basic-blue);
 }
 
@@ -203,7 +272,7 @@ footer {
 	line-height: 24px;
 }
 
-.tel {
+.footer-tel {
 	color: var(--basic-white);
 	font-size: 18px;
 	line-height: 24px;
@@ -211,8 +280,6 @@ footer {
 }
 
 .bottom-list a {
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-orange);
@@ -221,6 +288,7 @@ footer {
 .down-row {
 	background-color: var(--basic-dark-blue);
 }
+
 .modal-widow-map,
 .write-us-modal,
 .grey-box, 
@@ -238,25 +306,13 @@ footer {
 	color: var(--basic-orange);
 }
 
-.orders,
-.cabinet {
-	color: var(--basic-blue);
-	font-size: 16px;
-    line-height: 18px;
-	text-decoration: none;
-}
-
 .breadcrumbs a {
 	color: var(--basic-black);
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: normal;
+	font-family: "PT Sans", "Tahoma", "Arial";
 	font-size: 13px;
 	line-height: 18px;
-}
-
-.user-account a {
-	color: var(--basic-black);
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .main-content h1 {
@@ -268,66 +324,42 @@ footer {
 	line-height: 30px;
 }
 
-legend {
+.widget {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
 }
 
-.brand label,
-.battery-list label {
+.brands,
+.battery {
 	font-size: 15px;
 	line-height: 19px;
 	text-transform: uppercase;
 }
 
-.tool-cards a {
-	color: var(--basic-black);
-	font-family: PT Sans;
+.name-drill a {
+	font-family: "PT Sans", "Tahoma", "Arial";
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
+	color: var(--basic-black);
+	text-decoration: none;
 }
 
 .oldprice {
-	font-family: PT Sans;
+	font-family: "PT Sans", "Tahoma", "Arial";
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
-	color: #A9A9A9;
+	color: var(--basic-gray);
 	text-decoration-line: line-through;
 }
 
-a.btn {
-	background-color: var(--basic-red);
-	color: var(--basic-white);
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 17px;
-	line-height: 18px;
-}
-
-.about-goods {
+.about-name-drill {
 	background-color: var(--basic-light-blue);	
 }
 
-.about-goods h2 {	
-	font-style: normal;
-	font-weight: normal;
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-}
 
-.about-goods p {
-	color: var(--basic-black);
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 24px;
-}	

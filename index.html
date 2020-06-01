@@ -7,12 +7,12 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
+		<header class="blue-box">
 			<section class="top-row">						
 				<a class="logo-header">
 					<img src="img/logo/logo-technomart.svg" width="107" height="17" alt="логотип Техномарт">
 				</a>	 
-				<form action="https://echo.htmlacademy.ru" method="get">
+				<form action="https://echo.htmlacademy.ru" method="btn-green">
 					<fieldset>
 						<legend class="visually-hidden">Форма поиска</legend>
 						<label class="label-search" for="search">
@@ -23,10 +23,10 @@
 				</form>
 				<ul class="link-header">
 					<li>
-						<a class="white-link" href="#">Закладки: 0</a>
+						<a class="btn-primary" href="#">Закладки: 0</a>
 					</li>
 					<li>
-						<a class="white-link" href="#">Корзина: 0</a>
+						<a class="btn-primary" href="#">Корзина: 0</a>
 					</li>
 					<li>
 						<a class="btn-reservation" href="#">Оформить заказ</a>
@@ -44,14 +44,14 @@
 				</section>			
 				<section class="user-account">
 					<h1 class="visibility-hidden">личный кабинет</h1>
-					<button type="button" class="login">Войти</button>
-					<button type="button" class="registration">Регистрация</button>
+					<a class="user-btn" class="login">Войти</a>
+					<a class="user-btn" class="registration">Регистрация</a>
 				</section>
 			</section>
 			<section class="navigation">
 				<h1 class="visibility-hidden">навигация по сайту</h1>
 				<nav class="main-navigation">
-					<ul class="link-navigation">
+					<ul class="main-nav-list">
 						<li>
 							<a href="#">Главная</a>
 						</li>
@@ -126,52 +126,52 @@
 				<a class="btn" href="#">все популярные товары</a>	
 			</div>
 			<section class="catalog">
-				<article>
-					<h3>
+				<article class="drill">
+					<h3 class="name-drill">
 						<a href="#">Перфоратор BOSCH BFG 9000</a>
 					</h3>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<a href="#"> <!-- ссылка в карточку товара -->
+					<a class="btn-green" href="#">Купить</a>
+					<a class="btn-border-green" href="#">В закладки</a>
+					<a class="more" href="#"> <!-- ссылка в карточку товара -->
 						<img src="img/product-cards/drill_bosh_9000.jpg" width="184" height="164" alt="фото Перфоратора BOSCH BFG 9000">
 					</a>
 					<div class="oldprice" aria-label="старая цена">32500 Р.</div>
-					<a class="btn" href="#" aria-label="купить за">25500 Р.</a>
+					<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
 				</article>
-				<article>
-					<h3>
+				<article class="drill">
+					<h3 class="name-drill">
 						<a href="#">Перфоратор BOSCH BFG 3000</a>
 					</h3>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<a href="#"> <!-- ссылка в карточку товара -->
+					<a class="btn-green" href="#">Купить</a>
+					<a class="btn-border-green" href="#">В закладки</a>
+					<a class="more" href="#"> <!-- ссылка в карточку товара -->
 						<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 3000">
 					</a>
 					<div class="oldprice" aria-label="старая цена"> 22500 Р.</div>
-					<a class="btn" href="#" aria-label="купить за">15500 Р.</a>
+					<a class="btn-purchase" class="btn" href="#" aria-label="купить за">15500 Р.</a>
 				</article>
-				<article>
-					<h3>
+				<article class="drill">
+					<h3 class="name-drill">
 						<a href="#">Перфоратор BOSCH BFG 6000</a>
 					</h3>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<a href="#"> <!-- ссылка в карточку товара -->
+					<a class="btn-green" href="#">Купить</a>
+					<a class="btn-border-green" href="#">В закладки</a>
+					<a class="more" href="#"> <!-- ссылка в карточку товара -->
 						<img src="img/product-cards/drill_bosh_6000.jpg" width="144" height="128" alt="фото Перфоратора BOSCH BFG 6000">
 					</a>
 					<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-					<a class="btn" href="#" aria-label="купить за">25500 Р.</a>
+					<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
 				</article>
-				<article>
-					<h3>
+				<article class="drill">
+					<h3 class="name-drill">
 						<a href="#">Перфоратор BOSCH BFG 2000</a>
 					</h3>
-					<a href="#">Купить</a>
-					<a href="#">В закладки</a>
-					<a href="#"> <!-- ссылка в карточку товара -->
+					<a class="btn-green" href="#">Купить</a>
+					<a class="btn-border-green" href="#">В закладки</a>
+					<a class="more" href="#"> <!-- ссылка в карточку товара -->
 						<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфораторф BOSCH BFG 2000">
 					</a>				
-					<a class="btn" href="#" aria-label="купить за">12500 Р.</a>
+					<a class="btn-purchase" class="btn" href="#" aria-label="купить за">12500 Р.</a>
 				</article>
 			</section>			
 			<div class="popular">
@@ -181,42 +181,42 @@
 			<section class="firms">
 				<ul>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/bosch.png" width="126" height="37" alt="банер с логотипом bosch">
 						</a>
 					</li>			   
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/makita.png" width="123" height="40" alt="банер с логотипом makita">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/dewalt.png" width="146" height="44" alt="банер с логотипом dewalt">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/interskol.png" width="200" height="88" alt="банер с логотипом интерскол">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/hitachi.png" width="169" height="31" alt="банер с логотипом nitachi">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/lg.png" width="121" height="73" alt="банер с логотипом lg">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/aeg.png" width="151" height="96" alt="банер с логотипом aeg">
 						</a>
 					</li>
 					<li>
-						<a href="#" target="_blank">
+						<a href="#" tarbtn-green="_blank">
 							<img src="img/logo-brends/metabo.png" width="204" height="69" alt="банер с логотипом metabo">
 						</a>
 					</li>
@@ -268,7 +268,7 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a class="subject" href="#">Подробнее о компании</a>
+					<a class="btn-red" href="#">Подробнее о компании</a>
 				</div>
 				<div class="map-address">
 					<h2 class="subtitle">Контакты</h2>
@@ -277,17 +277,18 @@
 					<a href="img/content/map_popup.png">
 						<img src="img/content/map.png" width="300" height="158" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 					</a>
-					<a class="subject" href="#">Заблудились? Напишите нам!</a>					
+					<a class="btn-red" href="#">Заблудились? Напишите нам!</a>					
 				</div>
 			</section>
 		</main>
-		<footer>			
+		<footer class="box-dark-blue">			
 			<a class="logo-footer">
 				<img src="img/logo/logo-technomart.svg" width="136" height="22" alt="логотип Техномарт"> 
 			</a>		
 			<div class="contacts">
-				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<a class="tel" href="tel:+78125550555">+7(812)555-05-55</a>
+				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+				<a class="footer-tel" href="tel:+78125550555">+7(812)555-05-55</a>
+				</p>
 			</div>
 			<nav class="navigation-footer">
 				<ul class="top-list">
@@ -329,13 +330,13 @@
 					<h1 class="visibility-hidden">Мы в социальных сетях</h1>
 					<ul class="list-icons">
 						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
+							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">вконтакте</span></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
+							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">фейсбук</span></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">инстаграмм</span></a>
 						</li>
 					</ul>
 				</section>
@@ -344,7 +345,7 @@
 						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 					<p class="small-text">Разработано - 
-						<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+						<a href="https://htmlacademy.ru/intensive/htmlcss" tarbtn-green="_blank">htmlacademy.ru</a>
 					</p>
 				</section>
 			</div>
