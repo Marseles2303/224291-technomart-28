@@ -41,6 +41,7 @@
 	--basic-light-blue: #F1F5F7;
 	--basic-green: #63A63E;
 	--basic-gray: #A9A9A9;
+	--basic-light-gray: #E5E5E5;
 }
 
 body {
@@ -72,6 +73,7 @@ img {
 
 /* кнопки */
 .btn-green {
+	font-family: inherit;
 	background-color: var(--basic-green);
 	color: var(--basic-white);
 	font-size: 14px;
@@ -80,13 +82,16 @@ img {
 }
 
 .btn-primary {
-	color: var(--basic-white);
+	font-family: inherit;
+	background-color: var(--basic-white);
+	color: var(--basic-black);
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
 }
 
 .btn-reservation {
+	font-family: inherit;
 	color: var(--basic-white);
 	background-color: var(--basic-green);
 	font-size: 18px;
@@ -95,6 +100,7 @@ img {
 }
 
 .user-btn {
+	font-family: inherit;
 	border: none;
 	background-color: var(--basic-white);
 	color: var(--basic-black);
@@ -104,6 +110,7 @@ img {
 }
 
 .btn-transparent {
+	font-family: inherit;
 	background-color: var(--basic-white);
 	color: var(--basic-white);
 	font-size: 14px;
@@ -112,6 +119,7 @@ img {
 }
 
 .btn-red {
+	font-family: inherit;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
 	font-size: 14px;
@@ -121,8 +129,9 @@ img {
 }
 
 .btn-border-green {
+	font-family: inherit;
 	background-color: var(--basic-white);
-	border: 1px solid #EAEAEA;
+	border: 1px solid var(--basic-green);
 	color: var(--basic-purple);
 	font-size: 14px;
 	line-height: 18px;
@@ -133,7 +142,7 @@ img {
 .btn-purchase {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
@@ -142,15 +151,16 @@ img {
 
 .btn-white {
 	background-color: var(--basic-white);
-	border: 1px solid #E5E5E5;
+	border: 1px solid var(--basic-light-gray);
 	color: var(--basic-black);
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-decoration: none;
 }
 
 .btn-cabinet {
+	font-family: inherit;
 	color: var(--basic-blue);
 	font-size: 16px;
     line-height: 18px;
@@ -170,14 +180,19 @@ img {
 	color: var(--basic-white);
 }
 
-input[type="search"] {
+.entry-field {
+	font-family: inherit;
 	background-color: var(--basic-dark-blue);	
 	border: 0;
 	font-size: 18px;
 	line-height: 24px;
 }
 
-input[type="search"]::-webkit-input-placeholder {
+.entry-field::-webkit-input-placeholder {
+	color: var(--basic-white);	
+}
+
+.entry-field:-moz-placeholder {
 	color: var(--basic-white);	
 }
 
@@ -231,7 +246,7 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .subtitle {
-	font-family: "Cuprum", "Tahoma", "Arial";
+	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
 	text-transform: uppercase;
 	color: var(--basic-black);
 	font-size: 30px;
@@ -240,7 +255,7 @@ input[type="search"]::-webkit-input-placeholder {
 
 .text {
 	color: var(--basic-black);
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -302,13 +317,22 @@ input[type="search"]::-webkit-input-placeholder {
 	line-height: 18px;
 	color: var(--basic-white);
 }
+
 .feedback a {
 	color: var(--basic-orange);
 }
 
+.options {
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 30px;
+}
+
 .breadcrumbs a {
 	color: var(--basic-black);
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -331,15 +355,14 @@ input[type="search"]::-webkit-input-placeholder {
 	line-height: 30px;
 }
 
-.brands,
-.battery {
+.option-label {
 	font-size: 15px;
 	line-height: 19px;
 	text-transform: uppercase;
 }
 
 .name-drill a {
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial"; sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -349,7 +372,7 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .oldprice {
-	font-family: "PT Sans", "Tahoma", "Arial";
+	font-family: "PT Sans", "Tahoma", "Arial"; sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
@@ -361,5 +384,4 @@ input[type="search"]::-webkit-input-placeholder {
 .about-name-drill {
 	background-color: var(--basic-light-blue);	
 }
-
 

@@ -17,7 +17,7 @@
 						<legend class="visually-hidden">Форма поиска</legend>
 						<label class="label-search" for="search">
 							<span class="visually-hidden">Введите ключевые слова</span>
-							<input type="search" name="search" id="search" placeholder="Поиск:">
+							<input class="entry-field" type="search" name="search" id="search" placeholder="Поиск:">
 						</label>
 					</fieldset>
 				</form>
@@ -44,7 +44,7 @@
 				<section class="user-account">
 					<div class="user-name">
 						<h1 class="visibility-hidden">личный кабинет</h1>
-						<a class="user-btn" href="#" class="loged">Равшан Джамшутович</a>
+						<a class="user-btn loged" href="#">Равшан Джамшутович</a>
 						<a href="#">выход</a>
 					</div>
 					<div class="information">
@@ -117,40 +117,40 @@
 					</div>
 					<form action="https://echo.htmlacademy.ru" method="btn-green">
 						<fieldset>
-							<legend class="widbtn-green">производители:</legend>
+							<legend class="options">производители:</legend>
 							<ul class="options-list">
 								<li>
 									<input type="checkbox" name="bosch" id="filter-bosch" checked>
-									<label class="brands" for="filter-bosch">BOSCH</label>
+									<label class="option-label" for="filter-bosch">BOSCH</label>
 								</li>
 								<li>
 									<input type="checkbox" name="interskol" id="filter-interskol">
-									<label class="brands" for="filter-interskol">ИНТЕРСКОЛ</label>
+									<label class="option-label" for="filter-interskol">ИНТЕРСКОЛ</label>
 								</li>
 								<li>
 									<input type="checkbox" name="makita" id="filter-makita" checked>
-									<label class="brands" for="filter-makita">MAKITA</label>
+									<label class="option-label" for="filter-makita">MAKITA</label>
 								</li>						
 								<li>
 									<input type="checkbox" name="dewalt" id="filter-dewalt">
-									<label class="brands" for="filter-dewalt">DEWALT</label>
+									<label class="option-label" for="filter-dewalt">DEWALT</label>
 								</li>			
 								<li>
 									<input type="checkbox" name="hitachi" id="filter-hitachi">	
-									<label class="brands" for="filter-hitachi">HITACHI</label>
+									<label class="option-label" for="filter-hitachi">HITACHI</label>
 								</li>						
 							</ul>
 						</fieldset>
 						<fieldset>
-							<legend class="widbtn-green">Питание:</legend>
+							<legend class="options">Питание:</legend>
 							<ul class="options-list">
 								<li>
 									<input type="radio" name="battery" value="accumulator" id="filter-accumulator" checked>
-									<label class="battery" for="filter-accumulator">аккумуляторные</label>
+									<label class="option-label" for="filter-accumulator">аккумуляторные</label>
 								</li>						
 								<li>
 									<input type="radio" name="battery" value="network" id="filter-network">
-									<label class="battery" for="filter-network">сетевые</label>
+									<label class="option-label" for="filter-network">сетевые</label>
 								</li>						
 							</ul>
 						</fieldset>
@@ -184,11 +184,11 @@
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_6000.jpg" width="144" height="128" alt="фото Перфоратора BOSCH BFG 6000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">25500 Р.</a>
 					</article>					
 					<article class="drill">
 						<h3 class="name-drill">
@@ -196,13 +196,13 @@
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_6000.jpg" width="144" height="128" alt="фото Перфоратора BOSCH BFG 6000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">25500 Р.</a>
 					</article >				
-					<article class="drill" class="new">
+					<article class="drill new">
 						<h3 class="name-drill">
 							<a href="#">Перфоратор BOSCH BFG 6000</a>
 							<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 6000">
@@ -210,19 +210,19 @@
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
 						<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">25500 Р.</a>
 					</article>				
-					<article class="drill" class="new">
+					<article class="drill new">
 						<h3 class="name-drill">
 							<a href="#">Перфоратор BOSCH BFG 3000</a>
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 3000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">22500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">15500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">15500 Р.</a>
 					</article>
 					<article class="drill">
 						<h3 class="name-drill">
@@ -230,34 +230,34 @@
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_6000.jpg" width="144" height="128" alt="фото Перфоратора BOSCH BFG 6000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">25500 Р.</a>
 					</article>					
-					<article class="drill" class="new">
+					<article class="drill new">
 						<h3 class="name-drill">
 							<a href="#">Перфоратор BOSCH BFG 2000</a>
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 2000">
 						</a>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">12500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">12500 Р.</a>
 					</article>					
-					<article class="drill" class="new">
+					<article class="drill new">
 						<h3 class="name-drill">
 							<a href="#">Перфоратор BOSCH BFG 3000</a>
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href ="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href ="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 3000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">22500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">15500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">15500 Р.</a>
 					</article>					
 					<article class="drill">
 						<h3 class="name-drill">
@@ -265,38 +265,38 @@
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href ="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href ="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_6000.jpg" width="144" height="128" alt="фото Перфоратора BOSCH BFG 6000">
 						</a>
 						<div class="oldprice" aria-label="старая цена">30500 Р.</div>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">25500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">25500 Р.</a>
 					</article>					
-					<article class="drill" class="new">
+					<article class="drill new">
 						<h3 class="name-drill">
 							<a href="#">Перфоратор BOSCH BFG 2000</a>
 						</h3>
 						<a class="btn-green" href="#">Купить</a>
 						<a class="btn-border-green" href="#">В закладки</a>
-						<a class="more" href ="#"> <!-- ссылка в карточку товара -->
+						<a class="drill-img" href ="#"> <!-- ссылка в карточку товара -->
 							<img src="img/product-cards/drill_bosh_3000.jpg" width="127" height="112" alt="фото Перфоратора BOSCH BFG 2000">
 						</a>
-						<a class="btn-purchase" class="btn" href="#" aria-label="купить за">12500 Р.</a>
+						<a class="btn-purchase" href="#" aria-label="купить за">12500 Р.</a>
 					</article>
 				</section>
 				<div class="page">
 					<h2 class="visibility-hidden">Постраничная навигация</h2>
 					<ul class="page-items">
 						<li>
-							<a>1</a>
+							<a class="btn-white">1</a>
 						</li>
 						<li>
-							<a href="#">2</a>
+							<a class="btn-white" href="#">2</a>
 						</li>
 						<li>
-							<a href="#">3</a>
+							<a class="btn-white" href="#">3</a>
 						</li>
 						<li>
-							<a  class="btn-white" href="#">следующая</a>
+							<a class="btn-white" href="#">следующая</a>
 						</li>
 					</ul>	
 				</div>
@@ -359,13 +359,13 @@
 					<h1 class="visibility-hidden">Мы в социальных сетях</h1>
 					<ul class="list-icons">
 						<li>
-							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">вконтакте</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
 						</li>
 						<li>
-							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">фейсбук</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
 						</li>
 						<li>
-							<a href="#" tarbtn-green="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+							<a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
 						</li>
 					</ul>
 				</section>
@@ -374,7 +374,7 @@
 						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 					<p class="small-text">Разработано - 
-						<a href="https://htmlacademy.ru/intensive/htmlcss" tarbtn-green="_blank">htmlacademy.ru</a>
+						<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
 					</p>
 				</section>
 			</div>
