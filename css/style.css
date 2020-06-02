@@ -83,7 +83,7 @@ img {
 
 .btn-primary {
 	font-family: inherit;
-	background-color: var(basic-light-blue);
+	background-color: var(--basic-light-blue);
 	color: var(--basic-black);
 	font-size: 18px;
 	line-height: 24px;
@@ -188,11 +188,11 @@ img {
 	line-height: 24px;
 }
 
-.entry-field::placeholder {
+.entry-field::-webkit-input-placeholder{
 	color: var(--basic-white);	
 }
 
-.entry-field::placeholder {
+.entry-field::-placeholder {
 	color: var(--basic-white);	
 }
 
