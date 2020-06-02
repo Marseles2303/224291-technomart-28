@@ -83,7 +83,7 @@ img {
 
 .btn-primary {
 	font-family: inherit;
-	background-color: var(--basic-white);
+	background-color: var(basic-light-blue);
 	color: var(--basic-black);
 	font-size: 18px;
 	line-height: 24px;
@@ -188,11 +188,11 @@ img {
 	line-height: 24px;
 }
 
-.entry-field::-webkit-input-placeholder {
+.entry-field::placeholder {
 	color: var(--basic-white);	
 }
 
-.entry-field:-moz-placeholder {
+.entry-field::placeholder {
 	color: var(--basic-white);	
 }
 
@@ -362,7 +362,7 @@ img {
 }
 
 .name-drill a {
-	font-family: "PT Sans", "Tahoma", "Arial"; sans-serif;
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -372,7 +372,7 @@ img {
 }
 
 .oldprice {
-	font-family: "PT Sans", "Tahoma", "Arial"; sans-serif;
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
