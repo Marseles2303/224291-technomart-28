@@ -110,10 +110,15 @@
 				<h1>Перфораторы</h1>			
 				<aside class="sidebar">
 					<div class="filter">
-						<h2>Фильтр:</h2>
+						<h2 class="sort-black">Фильтр:</h2>
 					</div>
 					<div class="price">
-						<h3>цена:</h3>
+						<h3 class="options">цена:</h3>
+						<form class="price-range">
+							<input type="range" min="1" max="10">
+							<input class="price-min" type="text" name="price-min" value="0">
+							<input class="price-max" type="text" name="price-max" value="30000">
+						</form>
 					</div>
 					<form action="https://echo.htmlacademy.ru" method="post">
 						<fieldset>
@@ -158,16 +163,16 @@
 					</form>
 				</aside>
 				<div class="sorting">
-					<h2>сортировка</h2>
-					<ul>
+					<h2 class="sort-black">сортировка:</h2>
+					<ul class="sort-items">
 						<li>
-							<a href="#">по цене</a>
+							<a class="sort-red" href="#">по цене</a>
 						</li>
 						<li>
-							<a href="#">по типу</a>
+							<a class="sort-gray" href="#">по типу</a>
 						</li>
 						<li>
-							<a href="#">по функционалу</a>
+							<a class="sort-gray" href="#">по функционалу</a>
 						</li>
 						<li>
 							<a href="#" class="arrow-up" aria-label="листать вверх"></a>
@@ -316,77 +321,78 @@
 			</div>
 			<div class="contacts">
 				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				<a class="footer-tel" href="tel:+78125550555">+7(812)555-05-55</a>	
+					<a class="footer-tel" href="tel:+78125550555">+7(812)555-05-55</a>	
 				</p>
 			</div>
-			<nav class="navigation-footer">
-				<ul class="top-list">
-					<li>
-						<a href="#">Компания</a>
-					</li>
-					<li>
-						<a href="#">Новости</a>
-					</li>
-					<li>
-						<a href="#">Каталог</a>
-					</li>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-				<ul class="bottom-list">
-					<li>
-						<a href="#">Материалы</a>
-					</li>
-					<li>
-						<a href="#">Техника</a>
-					</li>
-					<li>
-						<a href="#">Инструмент</a>
-					</li>
-					<li>
-						<a href="#">Спецпредложения</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="down-row">
-				<p class="small-text">© 2010–2019 Компания «Техномарт»
-				Все права защищены</p>
-				<section class="social-web">
-					<h1 class="visibility-hidden">Мы в социальных сетях</h1>
-					<ul class="list-icons">
-						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
-						</li>
-						<li>
-							<a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
-						</li>
-					</ul>
-				</section>
-				<section class="feedback">
-					<p class="small-text">Обратная связь:
-						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-					</p>
-					<p class="small-text">Разработано - 
-						<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
-					</p>
-				</section>
-			</div>
+		<nav class="navigation-footer">
+		<ul class="top-list">
+		<li>
+		<a href="#">Компания</a>
+		</li>
+		<li>
+		<a href="#">Новости</a>
+		</li>
+		<li>
+		<a href="#">Каталог</a>
+		</li>
+		<li>
+		<a href="#">Доставка</a>
+		</li>
+		<li>
+		<a href="#">Контакты</a>
+		</li>
+		</ul>
+		<ul class="bottom-list">
+		<li>
+		<a href="#">Материалы</a>
+		</li>
+		<li>
+		<a href="#">Техника</a>
+		</li>
+		<li>
+		<a href="#">Инструмент</a>
+		</li>
+		<li>
+		<a href="#">Спецпредложения</a>
+		</li>
+		</ul>
+		</nav>
+		<div class="down-row">
+		<p class="small-text">© 2010–2019 Компания «Техномарт»
+		Все права защищены</p>
+		<section class="social-web">
+		<h1 class="visibility-hidden">Мы в социальных сетях</h1>
+		<ul class="list-icons">
+		<li>
+		<a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
+		</li>
+		<li>
+		<a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
+		</li>
+		<li>
+		<a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+		</li>
+		</ul>
+		</section>
+		<section class="feedback">
+		<p class="small-text">Обратная связь:
+		<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+		</p>
+		<p class="small-text">Разработано - 
+		<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+		</p>
+		</section>
+		</div>
 		</footer>						
 		<section class="modal-window-basket">
-			<h1 class="visibility-hidden">Добавление товара в корзину</h1>
-			<p class="success">Товар добавлен в корзину!</p>
-			<div class="grey-box">
-				<a href="#">Оформить заказ</a>
-				<button type="button">Продолжить покупки</button>
-			</div>
-			<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
+		<h1 class="visibility-hidden">Добавление товара в корзину</h1>
+		<p class="success">Товар добавлен в корзину!</p>
+		<div class="grey-box">
+		<a href="#">Оформить заказ</a>
+		<button type="button">Продолжить покупки</button>
+		</div>
+		<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
 		</section>
-	</body>
-</html>	
+		</body>
+		</html>	
+				

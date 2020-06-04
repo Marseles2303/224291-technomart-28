@@ -42,6 +42,16 @@
 	--basic-green: #63A63E;
 	--basic-gray: #A9A9A9;
 	--basic-light-gray: #E5E5E5;
+	--basic-carrot: #FFBF47;
+    --basic-bright-blue: #3BBCE3;
+	--basic-lilac: #DC91D8;
+	--basic-pale-green: #8ED78F;
+	--basic-yellow: #FFC047;
+	--basic-transparent: rgba(255, 255, 255, 0.3);
+	--basic-transparent-dark: rgba(0, 0, 0, 0.25);
+	--basic-beige: #F9F5F0;
+	--basic-dark-beige: #F7F3EC;
+	--basic-transparent-gray: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -79,12 +89,13 @@ img {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .btn-primary {
 	font-family: inherit;
-	background-color: var(--basic-light-blue);
-	color: var(--basic-black);
+	background-color: var(--basic-dark-blue);
+	color: var(--basic-white);
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
@@ -111,11 +122,12 @@ img {
 
 .btn-transparent {
 	font-family: inherit;
-	background-color: var(--basic-white);
+	background-color: var(--basic-transparent);
 	color: var(--basic-white);
 	font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+	text-decoration: none;
 }
 
 .btn-red {
@@ -136,6 +148,7 @@ img {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-decoration: none;
 	
 }
 
@@ -147,6 +160,7 @@ img {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 18px;
+	text-decoration: none;
 }
 
 .btn-white {
@@ -192,7 +206,7 @@ img {
 	color: var(--basic-white);	
 }
 
-.entry-field::-placeholder {
+.entry-field::placeholder {
 	color: var(--basic-white);	
 }
 
@@ -204,7 +218,10 @@ img {
 .items-user,
 .options-list,
 .nav-page,
-.page-items {
+.page-items,
+.brends,
+.services-items,
+.sort-items {
 	list-style-type: none;
 }
 
@@ -243,6 +260,81 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
+}
+
+.title-category {
+	color: var(--basic-white);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.category-1 {
+	background-color: var(--basic-carrot);
+}
+
+.category-2 {
+	background-color: var(--basic-bright-blue);
+}
+
+.category-3 {
+	background-color: var(--basic-lilac);
+}
+
+.category-4 {
+	background-color: var(--basic-pale-green);
+}
+
+.category-5 {
+	background-color: var(--basic-yellow);
+}
+
+.title-slider {
+	background-color: var(--basic-transparent-dark);
+	color: var(--basic-white);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.slogan {
+	background-color: var(--basic-transparent-dark);
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.title-desc {
+	background-color: var(--basic-beige);
+	color: var(--basic-purple);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.services {
+	background-color: var(--basic-light-blue);
+}
+
+.switch {
+	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
+	background-color: var(--basic-purple);
+	color: var(--basic-white);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 30px;
+}
+
+.service-item {
+	color: var(--basic-blue);
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
 }
 
 .subtitle {
@@ -328,6 +420,46 @@ img {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 30px;
+}
+
+.sort-black {
+	background-color: var(--basic-dark-beige);
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.sort-red {
+	background-color: var(--basic-dark-beige);
+	color: var(--basic-red);
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.sort-gray {
+	background-color: var(--basic-dark-beige);
+	color: var(--basic-transparent-gray);
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+	border-bottom: 1px dashed var(--basic-red);
+}
+
+.price-range {
+	background-color: var(--basic-dark-beige);
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .breadcrumbs a {
