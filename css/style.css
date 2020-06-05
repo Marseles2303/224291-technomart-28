@@ -52,6 +52,9 @@
 	--basic-beige: #F9F5F0;
 	--basic-dark-beige: #F7F3EC;
 	--basic-transparent-gray: rgba(0, 0, 0, 0.3);
+	--basic-vinous: #BA2732;
+	--basic-light-green: #5FBB2D;
+	--basic-pale-white: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -108,6 +111,16 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
+}
+
+.btn-reservation:hover, 
+.btn-reservation:focus {
+	background-color: var(--basic-light-green);
+}
+
+.btn-reservation:active {
+	background-color: var(--basic-green);
+	color: var(--basic-pale-white);
 }
 
 .user-btn {
@@ -181,6 +194,10 @@ img {
 	text-decoration: none;
 }
 
+.exit {
+	text-decoration: none;
+}
+
 .blue-box {
 	background-color: var(--basic-light-blue);	
 }
@@ -188,6 +205,10 @@ img {
 .logo-header {
 	background-color: var(--basic-red);
 }
+
+.logo-header:active {
+	background-color: (var--basic-vinous);
+} 
 
 .top-row {
 	background-color: var(--basic-dark-blue);
@@ -246,10 +267,6 @@ img {
 	line-height: 24px;
 }
 
-.user-account a {
-	color: var(--basic-black);
-}
-
 .main-navigation {
 	background-color: var(--basic-blue);	
 }
@@ -270,28 +287,31 @@ img {
 	line-height: 30px;
 }
 
-.category-1 {
+.category-carrot {
 	background-color: var(--basic-carrot);
 }
 
-.category-2 {
+.category-blue {
 	background-color: var(--basic-bright-blue);
 }
 
-.category-3 {
+.category-lilac {
 	background-color: var(--basic-lilac);
 }
 
-.category-4 {
+.category-green {
 	background-color: var(--basic-pale-green);
 }
 
-.category-5 {
+.category-yellow {
 	background-color: var(--basic-yellow);
 }
 
-.title-slider {
+.rectangle {
 	background-color: var(--basic-transparent-dark);
+}
+
+.title-slider {
 	color: var(--basic-white);
 	font-style: normal;
 	font-weight: bold;
@@ -301,19 +321,21 @@ img {
 }
 
 .slogan {
-	background-color: var(--basic-transparent-dark);
 	color: var(--basic-white);
 	font-size: 18px;
 	line-height: 24px;
 }
+.title-desc-wrap {
+	background-color: var(--basic-beige);
+}
 
 .title-desc {
-	background-color: var(--basic-beige);
 	color: var(--basic-purple);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 
 .services {
@@ -328,9 +350,10 @@ img {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
+	border: 0;
 }
 
-.service-item {
+.service-title {
 	color: var(--basic-blue);
 	font-size: 30px;
 	line-height: 30px;
@@ -422,8 +445,17 @@ img {
 	line-height: 30px;
 }
 
-.sort-black {
+.sorting {
 	background-color: var(--basic-dark-beige);
+}
+
+.sort-title {
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-size: 13px;
+    line-height: 18px;
+}
+
+.sort-items {
 	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -431,35 +463,18 @@ img {
 	line-height: 18px;
 }
 
-.sort-red {
-	background-color: var(--basic-dark-beige);
-	color: var(--basic-red);
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 18px;
-	text-decoration: none;
-}
-
-.sort-gray {
-	background-color: var(--basic-dark-beige);
+.sort-item a {	
 	color: var(--basic-transparent-gray);
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
 	text-decoration: none;
 	border-bottom: 1px dashed var(--basic-red);
 }
 
-.price-range {
-	background-color: var(--basic-dark-beige);
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	text-transform: uppercase;
+.sort-item-active a {
+	color: var(--basic-red);
+	text-decoration: none;
+	border-bottom: none;
 }
 
 .breadcrumbs a {

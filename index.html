@@ -81,37 +81,41 @@
 			<h1 class="visibility-hidden">Интернет-магазин «Техномарт»</h1>
 			<section class="offers">				
 				<h2 class="visibility-hidden">разделы интернет-магазина</h2>
-				<article class="category-1 new">
+				<article class="category category-carrot new">
 					<h3 class="title-category">Материалы</h3>					
 					<a class="btn-transparent" href="#">на любой вкус</a>
 				</article>
-				<article class="category-2">
-					<h3 class="title-category"> Инструмент</h3>					
+				<article class="category category-blue">
+					<h3 class="title-category">Инструмент</h3>					
 					<a class="btn-transparent" href="#">на все случаи</a>
 				</article>
-				<article class="category-3">
-					<h3 class="title-category"> Техника</h3>					
+				<article class="category category-lilac">
+					<h3 class="title-category">Техника</h3>					
 					<a class="btn-transparent" href="#">для стройки</a>
 				</article>
-				<article class="category-4">
+				<article class="category category-green">
 					<h3 class="title-category">Скидки 50%</h3>					
 					<a class="btn-transparent" href="#">на 350 товаров</a>
 				</article>
-				<article class="category-5">
+				<article class="category category-yellow">
 					<h3 class="title-category">Доставка</h3>					
 					<a class="btn-transparent" href="#">бесплатно</a>
 				</article>
 				<section class="slider">
 					<h1 class="visibility-hidden">Галерея разделов</h1>
 					<article class="slider-1">
-						<h2 class="title-slider">Перфораторы</h2>
-						<p class="slogan">Настоящие мужские игрушки</p>	
+					    <div class="rectangle">
+							<h2 class="title-slider">Перфораторы</h2>
+							<p class="slogan">Настоящие мужские игрушки</p>
+						</div>
 						<img src="img/sliders/slider_perforators.jpg" width="620" height="266" alt="мужчина c синим большим перфоратором bosch и в синем шлеме">
 						<a class="btn-red" href="catalog.html">Открыть каталог</a>					
 					</article>				
-					<article class="slider-2">				
-						<h2 class="title-slider">Дрели</h2>
-						<p class="slogan">Соседям на радость!</p>
+					<article class="slider-2">
+						<div class="rectangle">
+							<h2 class="title-slider">Дрели</h2>
+							<p class="slogan">Соседям на радость!</p>
+						</div>
 						<img src="img/sliders/slider_drills.jpg" width="620" height="266" alt="мужчина с дрелью в руке bosch и в желтом шлеме">
 						<a class="btn-red" href="catalog.html">Открыть каталог</a>
 					</article>
@@ -121,7 +125,7 @@
 					<span class="dot-right"></span>
 				</section>
 			</section>
-			<div class="popular">
+			<div class="title-desc-wrap">
 				<h2 class="title-desc">популярные товары:</h2>
 				<a class="btn-red" href="#">все популярные товары</a>	
 			</div>
@@ -174,7 +178,7 @@
 					<a class="btn-purchase" href="#" aria-label="купить за">12500 Р.</a>
 				</article>
 			</section>			
-			<div class="popular">
+			<div class="title-desc-wrap">
 				<h2 class="title-desc">популярные производители:</h2>
 				<a class="btn-red" href="#">все производители</a>
 			</div>
@@ -238,18 +242,18 @@
 					</li>
 				</ul>
 				<div class="delivery">
-					<h2 class="service-item">доставка</h2>
+					<h2 class="service-title">доставка</h2>
 					<p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
 					Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
 				</div>
 				<div class="garantia">
-					<h2 class="service-item">гарантия</h2>
+					<h2 class="service-title">гарантия</h2>
 					<p class="text">Если купленный у нас товар поломается или заискрит,
 						а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
 					Дом уж восстановите как нибудь сами.</p>
 				</div>
 				<div class="credit">
-					<h2 class="service-item">кредит</h2>
+					<h2 class="service-title">кредит</h2>
 					<p>Залезть в долговую яму стало проще!
 					Кредитные консультанты придут вам на помощь.</p>
 					<a class="btn-red" href="#">отправить заявку</a>
@@ -287,7 +291,7 @@
 			</a>		
 			<div class="contacts">
 				<p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				<a class="footer-tel" href="tel:+78125550555">+7(812)555-05-55</a>
+					<a class="footer-tel" href="tel:+78125550555">+7(812)555-05-55</a>
 				</p>
 			</div>
 			<nav class="navigation-footer">
@@ -353,32 +357,33 @@
 		<section class="modal-widow-map">
 			<h1 class="visibility-hidden">Карта адреса</h1>
 			<img src="img/content/map_popup.png" width="943" height="449" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-			<button type="button" class="close-map" aria-label="закрыть карту"></button>
+		<button type="button" class="close-map" aria-label="закрыть карту"></button>
 		</section>
 		<section class="write-us-modal">
-			<h1 class="visibility-hidden">Форма обратной связи</h1>
-			<form action="https://echo.htmlacademy.ru" method="post">
-				<label>Ваше имя:<input type="text" name="first-last-name" placeholder="Имя Фамилия"></label>
-				<label>Ваш e-mail:<input type="email" name="mail" placeholder="email@example.com"></label>
-				<label for="letters-field">Текст письма:</label>
-				<textarea name="writing-letters" id="letters-field" placeholder="В свободной форме">
-				</textarea>				
-				<div class="grey-box">
-					<button type="submit">Отправить</button>
-				</div>				
-			</form>	
-			<button type="button" class="close-modal" aria-label="закрыть форму"></button>
+		<h1 class="visibility-hidden">Форма обратной связи</h1>
+		<form action="https://echo.htmlacademy.ru" method="post">
+		<label>Ваше имя:<input type="text" name="first-last-name" placeholder="Имя Фамилия"></label>
+		<label>Ваш e-mail:<input type="email" name="mail" placeholder="email@example.com"></label>
+		<label for="letters-field">Текст письма:</label>
+		<textarea name="writing-letters" id="letters-field" placeholder="В свободной форме">
+		</textarea>				
+		<div class="grey-box">
+		<button type="submit">Отправить</button>
+		</div>				
+		</form>	
+		<button type="button" class="close-modal" aria-label="закрыть форму"></button>
 		</section>
 		<section class="modal-window-basket">
-			<h1 class="visibility-hidden">Добавление товара в корзину</h1>
-			<p class="success">Товар добавлен в корзину!</p>
-			<div class="grey-box">
-				<a href="#">Оформить заказ</a>
-				<button type="button">Продолжить покупки</button>
-			</div>
-			<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
+		<h1 class="visibility-hidden">Добавление товара в корзину</h1>
+		<p class="success">Товар добавлен в корзину!</p>
+		<div class="grey-box">
+		<a href="#">Оформить заказ</a>
+		<button type="button">Продолжить покупки</button>
+		</div>
+		<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
 		</section>
-	</body>
-</html>
-
-
+		</body>
+		</html>
+		
+		
+				
