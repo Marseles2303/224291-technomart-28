@@ -307,7 +307,7 @@ img {
 	background-color: var(--basic-yellow);
 }
 
-.rectangle {
+.title-container {
 	background-color: var(--basic-transparent-dark);
 }
 
@@ -465,16 +465,13 @@ img {
 
 .sort-item a {	
 	color: var(--basic-transparent-gray);
-	font-size: 13px;
-	line-height: 18px;
 	text-decoration: none;
 	border-bottom: 1px dashed var(--basic-red);
 }
 
 .sort-item-active a {
 	color: var(--basic-red);
-	text-decoration: none;
-	border-bottom: none;
+	border-color: transparent;
 }
 
 .breadcrumbs a {
@@ -487,48 +484,48 @@ img {
 }
 
 .main-content h1 {
-	background-color: var(--basic-light-blue);
-	color: var(--basic-purple);
-	font-style: normal;
-	font-weight: normal;
-	font-size: 30px;
-	line-height: 30px;
+background-color: var(--basic-light-blue);
+color: var(--basic-purple);
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
 }
 
 .widget {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 17px;
-	line-height: 30px;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 30px;
 }
 
 .option-label {
-	font-size: 15px;
-	line-height: 19px;
-	text-transform: uppercase;
+font-size: 15px;
+line-height: 19px;
+text-transform: uppercase;
 }
 
 .name-drill a {
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 20px;
-	color: var(--basic-black);
-	text-decoration: none;
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+color: var(--basic-black);
+text-decoration: none;
 }
 
 .oldprice {
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 17px;
-	line-height: 18px;
-	color: var(--basic-gray);
-	text-decoration-line: line-through;
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 18px;
+color: var(--basic-gray);
+text-decoration-line: line-through;
 }
 
 .about-name-drill {
-	background-color: var(--basic-light-blue);	
+background-color: var(--basic-light-blue);	
 }
 

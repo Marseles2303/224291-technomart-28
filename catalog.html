@@ -9,7 +9,7 @@
 	<body>
 		<header class="blue-box">
 			<section class="top-row">
-				<a class="logo-header">
+				<a class="logo-header" href="index.html">
 					<img src="img/logo/logo-technomart.svg" width="107" height="17" alt="логотип Техномарт">
 				</a>	
 				<form action="https://echo.htmlacademy.ru" method="get">
@@ -45,7 +45,7 @@
 					<div class="user-name">
 						<h1 class="visibility-hidden">личный кабинет</h1>
 						<a class="user-btn loged" href="#">Равшан Джамшутович</a>
-						<a class="exit" href="#">выход</a>
+						<a class="exit user-btn" href="#">выход</a>
 					</div>
 					<div class="information">
 						<ul class="items-user">
@@ -112,13 +112,13 @@
 					<div class="filter">
 						<h2 class="sort-black">Фильтр:</h2>
 					</div>
-					<fieldset class="price">
-						<legend class="options">цена:</legend>
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<fieldset class="price">
+							<legend class="options">цена:</legend>
 							<input type="range" min="1" max="10">
 							<input class="price-min" type="text" name="price-min" value="0">
 							<input class="price-max" type="text" name="price-max" value="30000">
-					</fieldset >
-					<form action="https://echo.htmlacademy.ru" method="post">
+						</fieldset >			
 						<fieldset>
 							<legend class="options">производители:</legend>
 							<ul class="options-list">
@@ -312,7 +312,7 @@
 			</article>
 		</main>
 		<footer class="box-dark-blue">
-			<a class="logo-footer">
+			<a class="logo-footer" href="index.html">
 				<img src="img/logo/logo-technomart.svg" width="136" height="22" alt="логотип Техномарт"> 
 			</a>
 			<div class="contacts">
