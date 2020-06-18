@@ -758,22 +758,21 @@ display: flex;
 	padding-top: 70px;
 	padding-top: 20px;
 }
-.brends {
+/* .brends {
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
-	align-items: stretch;
 }
 .brends a {
 	display: block;
 	width: 220px;
-	border: 1px solid var(--basic-border-gray);
+	
 }
 
 .services {
 	background-color: var(--basic-light-blue);
-}
+} */
 
 .switch {
 	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
