@@ -755,24 +755,31 @@ display: flex;
 }
 
 .firms {
-	padding-top: 70px;
+	padding-bottom: 70px;
 	padding-top: 20px;
 }
-/* .brends {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-}
-.brends a {
-	display: block;
-	width: 220px;
-	
+
+
+.subtitle {
+	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: var(--basic-black);
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding-top: 64px;
 }
 
-.services {
-	background-color: var(--basic-light-blue);
-} */
+.text {
+	color: var(--basic-black);
+	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	width: 478px;
+	margin: 0;
+	padding-top: 25px;	
+}
+
 
 .switch {
 	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
@@ -783,7 +790,33 @@ display: flex;
 	font-size: 21px;
 	line-height: 30px;
 	border: 0;
+	padding: 0;
+	padding-left: 22px;
+	width: 240px;
+	display: flex;
+	padding-top: 13px;
+	padding-bottom: 17px;
+	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+	
 }
+
+.services-items {
+	padding-top: 70px;
+}
+
+.container-services {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.delivery {
+background-image: url(../img/content/delivery.png); 
+background-repeat: no-repeat;
+background-position: right bottom;
+padding-top: 60px;
+}
+
 
 .service-title {
 	color: var(--basic-blue);
@@ -793,44 +826,18 @@ display: flex;
 }
 
 .info-company {
-	width: 940;
-	height: 356;
-	display: flex;	
-	margin-left: 130px;
-	margin-right: 130px;
-	margin-bottom: 70px;
-	margin-top: 70px;
-}
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 70px;
+}	
 
 .about-company {
-	width: 147;
-	height: 356;
-	margin-right: 162px;	
+	width: 147;	
 }
 
 .map-address {
 	width: 147;
 	height: 356;
-}
-
-.subtitle {
-	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
-	text-transform: uppercase;
-	color: var(--basic-black);
-	font-size: 30px;
-	line-height: 30px;
-	margin-top: 24px;
-}
-
-.text {
-	color: var(--basic-black);
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	width: 478px;
-	height: 147px;
-	margin-bottom: 0;
-	margin-top: 0;
 }
 
 .partners {
