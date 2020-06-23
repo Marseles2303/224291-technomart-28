@@ -775,6 +775,10 @@ img {
 	position: relative;
 }
 
+.carousel {
+	position: relative;
+}
+
 .title-container {
 	background-color: var(--basic-transparent-dark);
 	position: absolute;
