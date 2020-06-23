@@ -283,7 +283,11 @@ img {
 	text-align: center;	
 	padding-bottom: 10px;
 	padding-top: 10px;
+<<<<<<< HEAD
     padding-left: 78px;
+=======
+	padding-left: 78px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 	padding-right: 79px;
 	
 }
@@ -1053,6 +1057,7 @@ img {
 	width: 278px;
 	margin-bottom: 28px;
 }
+
 .credit .btn-red{
 	padding-left: 44px;
 	padding-right: 44px;
@@ -1147,6 +1152,7 @@ img {
 .nav-page {
 	display: flex;
 }
+
 .nav-page li {
 	padding-right: 41px;
 }
@@ -1203,11 +1209,28 @@ img {
 	height: 41px;
 	margin-bottom: 9px;
 	padding-top: 39px;
+<<<<<<< HEAD
 	
+=======
+	padding-left: 20px;
+    padding-right: 20px;
+	border-radius: 5px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 }
 
 .price-controls {
 	background-color: var(--basic-white);
+}
+
+.price-controls input {
+	background-color: var(--basic-dark-beige);
+	border: none;
+	width: 95px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 42px;
 }
 
 .range-controls .scale {
@@ -1220,8 +1243,13 @@ img {
 	margin: 0;
 	padding-right: 0;
 	padding-left: 0;
+<<<<<<< HEAD
 	margin-bottom: 37px;
 	
+=======
+	border: none;
+	margin-bottom: 37px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 }
 .sidebar {
 	float: left;
@@ -1268,6 +1296,14 @@ img {
 	display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
+.sort-item-active a {
+	color: var(--basic-red);
+	border-color: transparent;
+}
+
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 .min-container {
 	width: 700px;
 	margin: 0;
@@ -1281,6 +1317,7 @@ img {
 
 .tool-cards {
 	margin-top: 57px;
+	margin-bottom: 48px;
 }	
 
 .product-grid {	
@@ -1304,11 +1341,32 @@ img {
 	text-transform: uppercase;	
 }
 
+.page-navigation {
+	clear: both;
+	margin-bottom: 59px;
+}
+
+.page-items {
+	display: flex;
+	justify-content: flex-start;
+}
+
+li .leaf{
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+
+li:first-child .leaf {
+	background-color: var(--basic-red);	
+}
+
 .about-name-drill {
 	background-color: var(--basic-light-blue);	
 	clear: both;
-	height: 197px;
-	padding-top: 64px;
 }
 
 .caption {
@@ -1317,8 +1375,9 @@ img {
 	color: var(--basic-black);
 	font-size: 30px;
 	line-height: 30px;
-	height: 30px;
-	margin-left: 130px;
+	margin: 0;
+	padding-top: 63px;
+	margin-bottom: 25px;
 }
 
 .textual-content {
@@ -1326,11 +1385,17 @@ img {
 	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	height: 74px;
-	margin-left: 130px;
-	margin-top: 25px;
+	margin: 0;
+	padding-bottom: 68px;
+	width: 907px;
 }
+	
+	
+	
 
+
+
+<<<<<<< HEAD
 .page-navigation {
 	clear: both;
 	
@@ -1339,3 +1404,5 @@ img {
 	display: flex;
 	justify-content: flex-start;
 }
+=======
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
