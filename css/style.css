@@ -283,7 +283,11 @@ img {
 	text-align: center;	
 	padding-bottom: 10px;
 	padding-top: 10px;
+<<<<<<< HEAD
+    padding-left: 78px;
+=======
 	padding-left: 78px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 	padding-right: 79px;
 	
 }
@@ -1209,9 +1213,13 @@ img {
 	height: 41px;
 	margin-bottom: 9px;
 	padding-top: 39px;
+<<<<<<< HEAD
+	
+=======
 	padding-left: 20px;
     padding-right: 20px;
 	border-radius: 5px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 }
 
 .price-controls {
@@ -1230,17 +1238,22 @@ img {
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: var(--basic-dark-gray);
+	height: 2px;
+	background: var(--basic-dark-gray);
 }
 
 .side-options {
 	width: 220px;
-	margin-right: 0;
+	margin: 0;
 	padding-right: 0;
 	padding-left: 0;
+<<<<<<< HEAD
+	margin-bottom: 37px;
+	
+=======
 	border: none;
 	margin-bottom: 37px;
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 }
 .sidebar {
 	float: left;
@@ -1287,16 +1300,23 @@ img {
 	display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
 .sort-item-active a {
 	color: var(--basic-red);
 	border-color: transparent;
 }
 
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
 .min-container {
 	width: 700px;
 	margin: 0;
 	padding: 0;	
 	float: right;
+}
+.sort-item-active a {
+	color: var(--basic-red);
+	border-color: transparent;
 }
 
 .tool-cards {
@@ -1379,3 +1399,14 @@ li:first-child .leaf {
 
 
 
+<<<<<<< HEAD
+.page-navigation {
+	clear: both;
+	
+}
+.page-items {
+	display: flex;
+	justify-content: flex-start;
+}
+=======
+>>>>>>> 72579b56e98a0550a156f486151989c3715bbb64
