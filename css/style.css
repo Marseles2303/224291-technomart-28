@@ -272,6 +272,7 @@ img {
 }
 
 .btn-white {
+	display: inline-block;
 	background-color: var(--basic-white);
 	border: 1px solid var(--basic-light-gray);
 	color: var(--basic-black);
@@ -280,6 +281,11 @@ img {
 	line-height: 18px;
 	text-decoration: none;
 	text-align: center;	
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 78px;
+	padding-right: 79px;
+	
 }
 
 .btn-cabinet {
@@ -1047,6 +1053,7 @@ img {
 	width: 278px;
 	margin-bottom: 28px;
 }
+
 .credit .btn-red{
 	padding-left: 44px;
 	padding-right: 44px;
@@ -1141,6 +1148,7 @@ img {
 .nav-page {
 	display: flex;
 }
+
 .nav-page li {
 	padding-right: 41px;
 }
@@ -1175,15 +1183,46 @@ img {
 	width: 151px;
 	height: 30px;
 	text-transform: uppercase;
+	margin-bottom: 11px;
+}
+
+.filter {
+	width: 220px;
+	background-color: var(--basic-dark-beige);
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.price {
+	width: 220px;
+	margin-left: 0;
+	padding: 0;
+	border: none;
 }
 
 .range-controls {
-	height: 80px;
+	background-color: var(--basic-dark-beige);
+	height: 41px;
 	margin-bottom: 9px;
+	padding-top: 39px;
+	padding-left: 20px;
+    padding-right: 20px;
+	border-radius: 5px;
 }
 
 .price-controls {
 	background-color: var(--basic-white);
+}
+
+.price-controls input {
+	background-color: var(--basic-dark-beige);
+	border: none;
+	width: 95px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 42px;
 }
 
 .range-controls .scale {
@@ -1196,6 +1235,8 @@ img {
 	margin-right: 0;
 	padding-right: 0;
 	padding-left: 0;
+	border: none;
+	margin-bottom: 37px;
 }
 .sidebar {
 	float: left;
@@ -1219,7 +1260,6 @@ img {
 
 .sort-items li {
 	padding-right: 50px;
-
 }
 
 .sort-items {
@@ -1248,20 +1288,6 @@ img {
 	border-color: transparent;
 }
 
-.filter {
-	width: 220px;
-	background-color: var(--basic-dark-beige);
-	margin: 0;
-}
-
-.price {
-	width: 220px;
-	background-color: var(--basic-dark-beige);
-	margin-left: 0;
-	padding: 0;
-	border: none;
-}
-
 .min-container {
 	width: 700px;
 	margin: 0;
@@ -1271,6 +1297,7 @@ img {
 
 .tool-cards {
 	margin-top: 57px;
+	margin-bottom: 48px;
 }	
 
 .product-grid {	
@@ -1294,11 +1321,32 @@ img {
 	text-transform: uppercase;	
 }
 
+.page-navigation {
+	clear: both;
+	margin-bottom: 59px;
+}
+
+.page-items {
+	display: flex;
+	justify-content: flex-start;
+}
+
+li .leaf{
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+
+li:first-child .leaf {
+	background-color: var(--basic-red);	
+}
+
 .about-name-drill {
 	background-color: var(--basic-light-blue);	
 	clear: both;
-	height: 197px;
-	padding-top: 64px;
 }
 
 .caption {
@@ -1307,8 +1355,9 @@ img {
 	color: var(--basic-black);
 	font-size: 30px;
 	line-height: 30px;
-	height: 30px;
-	margin-left: 130px;
+	margin: 0;
+	padding-top: 63px;
+	margin-bottom: 25px;
 }
 
 .textual-content {
@@ -1316,17 +1365,13 @@ img {
 	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	height: 74px;
-	margin-left: 130px;
-	margin-top: 25px;
+	margin: 0;
+	padding-bottom: 68px;
+	width: 907px;
 }
+	
+	
+	
 
-.page-navigation {
-	clear: both;
-	width: 274px;
-	margin-left: 370px;
-}
-.page-items {
-	display: flex;
-	justify-content: space-between;
-}
+
+
