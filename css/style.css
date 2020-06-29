@@ -195,7 +195,7 @@ img {
 	text-decoration: none;
 	text-align: center;	
 	vertical-align: text-bottom;
-	padding-left: 24px;
+	padding-left: 25px;
 	padding-right: 24px;
 	padding-bottom: 12px;
 	padding-top: 12px;
@@ -358,9 +358,33 @@ img {
 	display: flex;
 	padding: 0;
 	margin: 0;
+	position: relative;
 }
 
-.entry-field::-webkit-input-placeholder{
+
+.link-header li:first-child::before {
+	content: "";
+	width: 20px;
+	height: 16px;
+	top: 13px;
+	position: absolute;
+	background-image: url(../img/icons/icon-bookmark.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.link-header li:nth-child(2)::before {
+	content: "";
+	width: 20px;
+	height: 16px;
+	top: 13px;
+	position: absolute;
+	background-image: url(../img/icons/icon-cart.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;	
+}
+
+.entry-field::-webkit-input-placeholder {
 	color: var(--basic-white);	
 }
 
@@ -436,15 +460,47 @@ img {
 
 .user-name {
 	width: 299px;
+	position: relative;
+	
 }
 
 .login {
+	padding-left: 45px;
 	margin-right: 10px;
+	background-image: url(../img/icons/icon-logout.svg);
+	background-repeat: no-repeat;
+	background-position: 18px 50%;		
+}
+
+.loged {
+	padding-left: 50px;
+	padding-right: 0;
 }
 
 .loged-exit-container {
 	display: flex;
 	justify-content: flex-end;
+}
+.loged-exit-container::before {
+	content: "";
+	width: 20px;
+	height: 17px;
+	top: 14px;
+	right: 14px;
+	position: absolute;
+	background-image: url(../img/icons/icon-logout.svg);
+	background-repeat: no-repeat;
+}
+
+.loged-exit-container::after {
+	content: "";
+	width: 20px;
+	height: 18px;
+	top: 14px;
+	right: 250px;
+	position: absolute;
+	background-image: url(../img/icons/icon-user.svg);
+	background-repeat: no-repeat;
 }
 
 .exit {
@@ -462,6 +518,17 @@ img {
 .items-user li {
 	margin-left: 27px;
 	margin-right: 27px;
+}
+
+.items-user::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	bottom: 14px;
+	left: 60px;
+	background: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
+	
 }
 
 .main-navigation {
@@ -689,6 +756,11 @@ img {
 	padding-right: 110px;
 	margin: 0;
 }
+.new {
+	background-image: url(../img/decor/flag_new.svg);
+	background-repeat: no-repeat;
+	background-position: 230px 0px;
+}
 
 .category::before {
 	content: "";
@@ -773,10 +845,6 @@ img {
 	position: relative;
 }
 
-.carousel {
-	position: relative;
-}
-
 .title-container {
 	background-color: var(--basic-transparent-dark);
 	position: absolute;
@@ -788,6 +856,18 @@ img {
 	padding-left: 24px;
 	padding-right: 25px;
 }
+
+.title-container::before {
+	content: "";
+	width: 21px;
+	height: 39px;
+	top: 123px;
+	background-image: url(../img/icons/icon-left.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	
+}
+
 
 .title-slider {
 	color: var(--basic-white);
@@ -876,6 +956,17 @@ img {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 28px;
+}
+
+.novelty::before {
+	content: "";
+	width: 100px;
+	height: 67px;
+	left: 147px;
+	top: 0px;
+	position: absolute;
+	background-image: url(../img/decor/flag_new.svg);
+	background-repeat: no-repeat;	
 }
 
 .buy-tab {
@@ -985,6 +1076,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 64px;
+	position: relative;
 }
 
 .service-title {
@@ -1010,6 +1102,17 @@ img {
 	padding-top: 13px;
 	padding-bottom: 17px;
 	text-align: left;
+	box-shadow: 0px 1px 0px var(--basic-dark-blue), inset 0px 1px 0px var(--basic-shadow-light);
+}
+
+.services-items::before {
+	content: "";
+	width: 10px;
+	height: 279px;
+	left: 230px;
+	position: absolute;
+	background-image: url(../img/decor/shadow.png);
+	background-repeat: no-repeat;		
 }
 
 .services-slider {
@@ -1136,6 +1239,7 @@ img {
 	margin: 0;
 	margin-bottom: 20px;
 	padding-top: 21px;
+	position: relative;
 }
 
 .breadcrumbs a {
@@ -1150,6 +1254,39 @@ img {
 
 .nav-page {
 	display: flex;
+	
+}
+
+.nav-page::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 25px;
+	background-image: url(../img/icons/icon-home.svg);
+	background-repeat: no-repeat;
+}
+
+.nav-page li:first-child::before {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 12px;
+	left: 110px;
+	top: 25px;
+	background-image: url(../img/icons/icon-right-small.svg);
+	background-repeat: no-repeat;
+}
+
+.nav-page li:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 12px;
+	left: 230px;
+	top: 25px;
+	background-image: url(../img/icons/icon-right-small.svg);
+	background-repeat: no-repeat;
 }
 
 .nav-page li {
