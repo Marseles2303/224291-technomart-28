@@ -342,9 +342,14 @@ img {
 	padding-top: 9px;
 	padding-right: 20px;
 	border: 0;
-	background-image: url(../img/icons/icon-search.svg);
+}
+
+.icon {
+	position: absolute;
 	background-repeat: no-repeat;
-	background-position: 10px 50%;
+	bottom: 5px;
+	left: 10px;
+	opacity: 0.3;
 }
 
 .search {
@@ -460,47 +465,37 @@ img {
 
 .user-name {
 	width: 299px;
-	position: relative;
-	
+	position: relative;	
 }
 
 .login {
-	padding-left: 45px;
-	margin-right: 10px;
-	background-image: url(../img/icons/icon-logout.svg);
-	background-repeat: no-repeat;
-	background-position: 18px 50%;		
+ 	padding-left: 19px;
+	margin-right: 10px;	 
+}
+
+.login img {
+	padding-right: 6px;
 }
 
 .loged {
-	padding-left: 50px;
-	padding-right: 0;
+	padding-left: 21;
+	padding-right: 0px;
 }
+
+.loged img {
+	padding-right: 15px;
+}
+
+.exit img {
+	position: absolute;
+	top: 15px;
+	right: 14px;
+}
+
 
 .loged-exit-container {
 	display: flex;
 	justify-content: flex-end;
-}
-.loged-exit-container::before {
-	content: "";
-	width: 20px;
-	height: 17px;
-	top: 14px;
-	right: 14px;
-	position: absolute;
-	background-image: url(../img/icons/icon-logout.svg);
-	background-repeat: no-repeat;
-}
-
-.loged-exit-container::after {
-	content: "";
-	width: 20px;
-	height: 18px;
-	top: 14px;
-	right: 250px;
-	position: absolute;
-	background-image: url(../img/icons/icon-user.svg);
-	background-repeat: no-repeat;
 }
 
 .exit {
@@ -523,11 +518,12 @@ img {
 .items-user::before {
 	content: "";
 	position: absolute;
-	width: 6px;
-	height: 6px;
+	width: 5px;
+	height: 5px;
 	bottom: 14px;
-	left: 60px;
-	background: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
+	left: 135px;
+	background: linear-gradient(0deg, #32425C, #32425C);
+	border-radius: 5px;
 	
 }
 
