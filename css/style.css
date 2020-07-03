@@ -863,15 +863,47 @@ img {
 }
 
 /* слайдер */
-.slider {
+.sliders {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row: 2 / -1;
+	position: relative;	
 }
 
-.carousel {
-	position: relative;
+.slider {
+	display: none;
+   
 }
+
+.current {
+	display: block;
+	
+}
+
+.slider-controls {
+	position: absolute;
+	 bottom: 36px;
+     left: 295px;
+     z-index: 20;
+	 display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.point-active { 
+background-color: var(--basic-red);
+}
+
 
 .title-container {
 	background-color: var(--basic-transparent-dark);
@@ -884,18 +916,6 @@ img {
 	padding-left: 24px;
 	padding-right: 25px;
 }
-
-.title-container::before {
-	content: "";
-	width: 21px;
-	height: 39px;
-	top: 123px;
-	background-image: url(../img/icons/icon-left.svg);
-	position: absolute;
-	background-repeat: no-repeat;
-	
-}
-
 
 .title-slider {
 	color: var(--basic-white);
