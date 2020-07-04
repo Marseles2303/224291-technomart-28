@@ -62,6 +62,7 @@
 	--basic-gray-smoky: #F2F6F8;
 	--basic-color-blue: #212A3A;
 	--basic-color-gray: #ABABAB;
+	--basic-color-shadow #aeb2ba;
 }
 
 body {
@@ -141,9 +142,21 @@ img {
 	padding-bottom: 10px;
 	padding-left: 54px;
 	padding-right: 40px;
-	margin-bottom: 10px;
+	margin-bottom: 10px;	
+}
+
+.btn-green::before {
+	content: "";
+	width: 20px;
+	height: 16px;
+	position: absolute;
+	background-image: url(../img/icons/icon-cart.svg);
+	background-repeat: no-repeat;
+	left: 66px;
+	opacity: 0.3;
 	
 }
+
 
 .btn-primary {
     display: inline-block;
@@ -256,7 +269,8 @@ img {
 }
 
 .btn-purchase {
-	background-color: var(--basic-red);
+	background-image: url(../img/buttons/red-button.svg);
+	background-repeat: no-repeat;
 	color: var(--basic-white);
 	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 	font-style: normal;
@@ -265,13 +279,17 @@ img {
 	line-height: 18px;
 	text-decoration: none;
 	text-align: center;	
-	display: inline-block;
+	display: inline-block;		
 	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 32px;
-	padding-right: 25px;
 	vertical-align: bottom;
+	width: 141px;
+	height: 38px;
+	position: absolute;
+	left: 47px;
+	bottom: 15px;
 }
+
+
 
 .btn-white {
 	display: inline-block;
@@ -892,8 +910,8 @@ img {
 
 .slider-controls button {
   padding: 0;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background-color: var(--basic-white);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
@@ -901,8 +919,35 @@ img {
 }
 
 .point-active { 
-background-color: var(--basic-red);
+ padding: 0;
+ width: 6px;
+ height: 6px;
+ background-color: var(--basic-red);
+ border-radius: 50%;
+ position: absolute;
+ top: 2px;
+ left: 22px;
 }
+
+.arrow-left {
+	position: absolute;
+	bottom: 104px;
+	left: 24px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.arrow-right {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 104px;
+	left: 578px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
 
 
 .title-container {
@@ -990,6 +1035,7 @@ background-color: var(--basic-red);
 	padding-top: 20px;
 	position: relative;
 	margin-bottom: 18px;
+	position: relative;
 }
 
 .catalog .drill:nth-child(4n) {
@@ -1004,7 +1050,7 @@ background-color: var(--basic-red);
 	min-height: 160px;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 28px;
+	margin-bottom: 8px;
 }
 
 .novelty::before {
@@ -1031,6 +1077,9 @@ background-color: var(--basic-red);
 	min-height: 90px;
 }
 
+.drill:hover {
+	box-shadow: 0 0 10px #aeb2ba;
+}
 
 .drill:hover .buy-tab{
 	display: block;
@@ -1047,7 +1096,7 @@ background-color: var(--basic-red);
 	display: inline-block;
 	text-align: center;
 	margin: 0;
-	padding-bottom: 21px;
+	padding-bottom: 6px;
 }
 
 .name-drill {
@@ -1069,7 +1118,7 @@ background-color: var(--basic-red);
 	padding-top: 7px;
 	display: inline-block;
 	text-align: center;
-	margin-bottom: 13px;
+	margin-bottom: 52px;
 }
 
 .firms {
@@ -1193,9 +1242,11 @@ background-color: var(--basic-red);
 	padding-bottom: 30px;
 	background-position: right bottom;
 	background-repeat: no-repeat;
+	display: none;
 }
 
 .delivery {
+	display: block;
     background-image: url(../img/content/delivery.png); 	
 }
 
