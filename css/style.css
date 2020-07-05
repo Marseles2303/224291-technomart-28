@@ -890,7 +890,7 @@ img {
 
 .slider {
 	display: none;
-   
+	
 }
 
 .current {
@@ -900,33 +900,33 @@ img {
 
 .slider-controls {
 	position: absolute;
-	 bottom: 36px;
-     left: 295px;
-     z-index: 20;
-	 display: flex;
-  width: 30px;
-  justify-content: space-between;
+	bottom: 36px;
+	left: 295px;
+	z-index: 20;
+	display: flex;
+	width: 30px;
+	justify-content: space-between;
 }
 
 .slider-controls button {
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  background-color: var(--basic-white);
-  border: 2px solid var(--basic-white);
-  border-radius: 50%;
-  cursor: pointer;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	background-color: var(--basic-white);
+	border: 2px solid var(--basic-white);
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .point-active { 
- padding: 0;
- width: 6px;
- height: 6px;
- background-color: var(--basic-red);
- border-radius: 50%;
- position: absolute;
- top: 2px;
- left: 22px;
+	padding: 0;
+	width: 6px;
+	height: 6px;
+	background-color: var(--basic-red);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 22px;
 }
 
 .arrow-left {
@@ -1490,8 +1490,10 @@ img {
 	text-transform: uppercase;	
 }
 
+
 .options-list li {
 	margin-bottom: 20px;
+	position: relative;
 }
 
 .options-list li:nth-last-child {
@@ -1511,198 +1513,198 @@ img {
 }
 
 .range-controls .bar {
-  width: 70%;
-  height: 2px;
-  background: var(--basic-green);
+width: 70%;
+height: 2px;
+background: var(--basic-green);
 }
 
 .range-controls .toggle {
-  position: absolute;
-  top: 31px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid var(--basic-white);
-  background-color: var(--basic-color-gray);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
+position: absolute;
+top: 31px;
+left: 0;
+width: 4px;
+height: 4px;
+padding: 0;
+border: 8px solid var(--basic-white);
+background-color: var(--basic-color-gray);
+border-radius: 50%;
+box-shadow: 0 2px 1px 0 #cfcfcf;
+cursor: pointer;
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 140px;
+left: 140px;
 }
 
 .price-controls {
-	background-color: var(--basic-white);
-	display: flex;
-	justify-content: space-between;
+background-color: var(--basic-white);
+display: flex;
+justify-content: space-between;
 }
 
 .price-controls input {
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	text-transform: uppercase;
-	background-color: var(--basic-dark-beige);
-	border: none;
-	width: 90px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 5px;
-	text-align: center;
-	
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-size: 17px;
+line-height: 18px;
+text-transform: uppercase;
+background-color: var(--basic-dark-beige);
+border: none;
+width: 90px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 5px;
+text-align: center;
+
 }
 .min-price {
-	margin-right: 30px;
+margin-right: 30px;
 }
 
 .range-controls .scale {
-	height: 2px;
-	background: var(--basic-dark-gray);
+height: 2px;
+background: var(--basic-dark-gray);
 }
 
 /* сортировка */
 
 .min-container {
-	width: 700px;
-	margin: 0;
-	padding: 0;
+width: 700px;
+margin: 0;
+padding: 0;
 }
 
 .sorting {
-	background-color: var(--basic-dark-beige);
-	display: flex;
-	align-items: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 28px;
+background-color: var(--basic-dark-beige);
+display: flex;
+align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 28px;
 }
 
 .sort-title {
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	padding-left: 20px;
-	margin: 0;
-	margin-right: 20px;
-	width: 200px;
-	text-transform: uppercase;
-    font-weight: normal;
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-size: 13px;
+line-height: 18px;
+padding-left: 20px;
+margin: 0;
+margin-right: 20px;
+width: 200px;
+text-transform: uppercase;
+font-weight: normal;
 }
 
 .sort-items {
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 13px;
-	line-height: 18px;	
-	display: flex;
-	margin-right: 0px;
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-style: normal;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 13px;
+line-height: 18px;	
+display: flex;
+margin-right: 0px;
 }
 
 .sort-items li {
-	padding-right: 55px;
+padding-right: 55px;
 }
 
 .sort-items li:nth-child(4) {
-	padding-right: 21px;
-	}
-	
+padding-right: 21px;
+}
+
 .sort-items li:nth-child(5)	{
-	padding-right: 0;
+padding-right: 0;
 }
 
 
 .sort-item a {	
-	color: var(--basic-transparent-gray);
-	text-decoration: none;
-	border-bottom: 1px dashed var(--basic-red);
-	display: inline-block;
-	vertical-align: top;
+color: var(--basic-transparent-gray);
+text-decoration: none;
+border-bottom: 1px dashed var(--basic-red);
+display: inline-block;
+vertical-align: top;
 }
 
 .sort-item-active a {
-	color: var(--basic-red);
-	border-color: transparent;
+color: var(--basic-red);
+border-color: transparent;
 }
 
 .arrow-down svg {
-	transform: rotate(180deg);
-	margin-right: 14px;
+transform: rotate(180deg);
+margin-right: 14px;
 }
 
 
 /* каталог */
 
 .tool-cards {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 48px;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 48px;
 }
 
 .tool-cards .drill {
-	margin-right: 20px;
+margin-right: 20px;
 }
 
 .tool-cards .drill:nth-child(3n) {
-	margin-right: 0;
+margin-right: 0;
 } 
 
 
 .page-navigation {
-	margin-bottom: 59px;
+margin-bottom: 59px;
 }
 
 .page-items {
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
 }
 
 .page-item { 
-	margin-right: 10px;
+margin-right: 10px;
 }
 
 .page-link,
 .page-link-active {	
-	padding-top: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+padding-top: 10px;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .page-link-active {
-	background-color: var(--basic-red);	
+background-color: var(--basic-red);	
 }
 
 .about-name-drill {
-	background-color: var(--basic-light-blue);
-	padding-top: 63px;
-	padding-bottom: 68px;
+background-color: var(--basic-light-blue);
+padding-top: 63px;
+padding-bottom: 68px;
 }
 
 .caption {
-	font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
-	text-transform: uppercase;
-	color: var(--basic-black);
-	font-size: 30px;
-	line-height: 30px;
-	margin: 0;
-	margin-bottom: 25px;
+font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
+text-transform: uppercase;
+color: var(--basic-black);
+font-size: 30px;
+line-height: 30px;
+margin: 0;
+margin-bottom: 25px;
 }
 
 .textual-content {
-	color: var(--basic-black);
-	font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	margin: 0;
+color: var(--basic-black);
+font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
+font-size: 13px;
+line-height: 24px;
+margin: 0;
 }
 
 
