@@ -169,8 +169,8 @@ img {
 	text-align: center;	
 	padding-bottom: 9px;
 	padding-top: 9px;
-	padding-left: 44px;
-	padding-right: 26px;
+	padding-left: 45px;
+	padding-right: 27px;
 }
 
 .btn-reservation {
@@ -243,7 +243,7 @@ img {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	padding-top: 11px;
+	padding-top: 10px;
 	padding-bottom: 9px;
 	vertical-align: top;	
 }
@@ -276,13 +276,13 @@ img {
 	text-decoration: none;
 	text-align: center;	
 	display: inline-block;		
-	padding-top: 10px;
+	padding-top: 8px;
 	vertical-align: bottom;
-	width: 141px;
+	width: 146px;
 	height: 38px;
 	position: absolute;
-	left: 47px;
-	bottom: 15px;
+	left: 38px;
+	bottom: 13px;
 }
 
 .btn-white {
@@ -351,18 +351,18 @@ img {
 	background-color: var(--basic-dark-blue);	
 	font-size: 18px;
 	line-height: 24px;
-	width: 271px;	
+	width: 263px;	
 	padding-bottom: 9px;
-	padding-left: 43px;
+	padding-left: 40px;
 	padding-top: 9px;
-	padding-right: 20px;
+	padding-right: 10px;
 	border: 0;
 }
 
 .search-icon {
 	position: absolute;
-	top: 13px;
-	left: 10px;
+	top: 12px;
+	left: 15px;
 	opacity: 0.3;
 }
 
@@ -382,9 +382,9 @@ img {
 
 .icon-bookmark::before {
 	content: "";	
-	width: 14px;
+	width: 13px;
 	height: 16px;
-	left: 20px;
+	left: 22px;
 	top: 13px;
 	position: absolute;
 	background-image: url(../img/icons/icon-bookmark.svg);
@@ -398,7 +398,7 @@ img {
 	width: 15px;
 	height: 16px;
 	top: 13px;
-	left: 172px;
+	left: 177px;
 	position: absolute;
 	background-image: url(../img/icons/icon-cart.svg);
 	background-repeat: no-repeat;
@@ -415,8 +415,8 @@ img {
 }
 
 .info {
-	padding-bottom: 48px;
-	padding-top: 48px;
+	padding-bottom: 41px;
+	padding-top: 44px;
 }
 
 .info .container {
@@ -441,6 +441,7 @@ img {
 	line-height: 23px;
 	width: 197px;
 	margin: 0;
+	margin-right: 19px;
 	padding-left: 31px;
 }
 
@@ -451,9 +452,11 @@ img {
 
 .telephone {	
 	border: 3px solid var(--basic-white);	
-	padding-bottom: 7px;
-	padding-top: 7px;
+	padding-bottom: 6px;
+	padding-top: 6px;
 	position: relative;
+	padding-left: 34px;
+	margin-bottom: 1px;
 }
 
 .telephone::before {
@@ -463,19 +466,20 @@ img {
 	height: 19px;
 	background-image: url(../img/icons/icon-phone.svg);
 	background-repeat: no-repeat;
-	left: 30px;
-	top: 13px;
+	left: 39px;
+	top: 11px;
 }
 
 .address {
 	color: var(--basic-purple);
 	font-size: 14px;
-	line-height: 24px;	
+	line-height: 24px;
+    padding-left: 4px;	
 }
 
 .user-account {
 	display: flex;
-	width: 279px;
+	width: 280px;
 	justify-content: flex-end;
 	align-items: flex-start;
 }
@@ -485,14 +489,17 @@ img {
 	position: relative;	
 }
 
+.login svg {
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
 .login {
 	padding-left: 19px;
 	margin-right: 10px;	 
 }
 
-.login img {
-	padding-right: 6px;
-}
+
 
 .loged {
 	padding-left: 21;
@@ -559,9 +566,9 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
-	padding-top: 18px;
+	padding-top: 17px;
 	padding-bottom: 18px;
-	padding-left: 25px;
+	padding-left: 33px;
 	padding-right: 25px;
 	vertical-align: top;
 }
@@ -826,9 +833,9 @@ img {
 	background-color: var(--basic-bright-blue);
 }
 .category-blue::before {
-	right: 37px;
-	bottom: 28px;
-	width: 75px;
+	right: 31px;
+	bottom: 25px;
+	width: 76px;
 	height: 65px;
 	background-image: url(../img/icons/icon-drill.svg);
 }
@@ -838,9 +845,9 @@ img {
 }
 
 .category-lilac::before {
-	right: 34px;
+	right: 30px;
 	bottom: 30px;
-	width: 78px;
+	width: 80px;
 	height: 62px;
 	background-image: url(../img/icons/icon-tractor.svg);
 }
@@ -851,9 +858,9 @@ img {
 }
 
 .category-green::before {
-	right: 38px;
+	right: 39px;
 	bottom: 24px;
-	width: 60px;
+	width: 63px;
 	height: 72px;
 	background-image: url(../img/icons/icon-discounts.svg);
 }
@@ -864,9 +871,9 @@ img {
 }
 
 .category-yellow::before {
-	right: 34px;
+	right: 30px;
 	bottom: 28px;
-	width: 78px;
+	width: 80px;
 	height: 64px;
 	background-image: url(../img/icons/icon-delivery.svg);
 }
@@ -920,8 +927,8 @@ img {
 
 .arrow-left {
 	position: absolute;
-	bottom: 104px;
-	left: 24px;
+	bottom: 99px;
+	left: 22px;
 	border: none;
 	background: transparent;
 	cursor: pointer;
@@ -931,7 +938,7 @@ img {
 	transform: rotate(180deg);
 	position: absolute;
 	bottom: 104px;
-	left: 578px;
+	left: 575px;
 	border: none;
 	background: transparent;
 	cursor: pointer;
@@ -970,8 +977,8 @@ img {
 }
 
 .btn-open {
-	padding-left: 46px;
-	padding-right: 46px;
+	padding-left: 48px;
+	padding-right: 47px;
 	position: absolute;
 	bottom: 27px;
 	left: 24px;
@@ -983,11 +990,15 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 29px;
-	padding-bottom: 30px;
-	padding-left: 28px;
-	padding-right: 15px;
+	padding-top: 26px;
+	padding-bottom: 27px;
+	padding-left: 29px;
+	padding-right: 12px;
 	margin-bottom: 20px;
+}
+
+.brands-block {
+	padding-right: 17px;
 }
 
 .title-desc {
@@ -998,10 +1009,12 @@ img {
 	line-height: 30px;
 	text-transform: uppercase;
 	margin: 0;	
+
 }
 
 .title-desc-wrap .btn-red {
 	width: 192px
+	
 }
 
 .catalog {
@@ -1011,20 +1024,19 @@ img {
 }
 
 .drill {
-	width: 219px;
+	width: 220px;
 	border: 1px solid var(--basic-border-gray);	
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin-right: 20px;
-	padding-left: 18px;
-	padding-right: 18px;
+	padding-left: 19px;
+	padding-right: 20px;
 	padding-bottom: 21px;
-	padding-top: 20px;
+	padding-top: 2px;
 	position: relative;
-	margin-bottom: 18px;
-	position: relative;
+
 }
 
 .catalog .drill:nth-child(4n) {
@@ -1039,7 +1051,7 @@ img {
 	min-height: 160px;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 8px;
+	margin-bottom: 15px;
 }
 
 .novelty::before {
@@ -1091,6 +1103,7 @@ img {
 
 .name-drill {
 	margin: 0;
+	padding-left: 5px;
 }
 
 .no-discount {
@@ -1105,7 +1118,8 @@ img {
 	line-height: 18px;
 	color: var(--basic-gray);
 	text-decoration-line: line-through;
-	padding-top: 7px;
+	padding-top: 2px;
+	padding-left: 2px;
 	display: inline-block;
 	text-align: center;
 	margin-bottom: 52px;
@@ -1127,6 +1141,10 @@ img {
 
 .brends li:nth-child(4n) {
 	margin-right: 0;
+}
+
+.brends li:nth-child(4n) a {
+	padding-bottom: 13px;
 }
 
 .brends a {
@@ -1164,12 +1182,13 @@ img {
 
 .advertising {
 	width: 394px;
+	padding-left: 3px;
 }
 
 .container-services {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 64px;
+	padding-top: 70px;
 	position: relative;
 }
 
@@ -1224,17 +1243,18 @@ img {
 .list-services {
 	margin: 0;
 	padding: 0;
+	padding-left:12px;
 	list-style: none;
 }
 
 .service-title{
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .slide {
 	min-height: 255px;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	display: none;
