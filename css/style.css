@@ -62,7 +62,7 @@
 	--basic-gray-smoky: #F2F6F8;
 	--basic-color-blue: #212A3A;
 	--basic-color-gray: #ABABAB;
-	--basic-color-shadow #aeb2ba;
+	--basic-color-shadow #AEB2BA;
     --basic-border: rgba(0, 0, 0, 0.0001);
 }
 
@@ -903,7 +903,6 @@ img {
 }
 
 .slider-controls {
-	position: absolute;
 	bottom: 36px;
 	left: 295px;
 	z-index: 20;
@@ -920,9 +919,11 @@ img {
 	border: 2px solid var(--basic-white);
 	border-radius: 50%;
 	cursor: pointer;
+	position: relative;
 }
 
-.point-active { 
+
+.active::before { 
 	padding: 0;
 	width: 6px;
 	height: 6px;
