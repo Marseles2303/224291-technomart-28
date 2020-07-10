@@ -269,7 +269,7 @@ img {
 	text-decoration: none;
 	text-align: center;	
 	display: inline-block;		
-	padding-top: 8px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 15px;
@@ -370,7 +370,7 @@ img {
 .link-header {
 	display: flex;
 	padding: 0;
-	margin: auto;
+	margin-left: auto;
 }
 
 .link-header a {
@@ -507,6 +507,7 @@ img {
 .loged svg {
 	position: absolute;
 	left: 21px;
+	top: 13px;
 } 
 
 .exit {
@@ -515,7 +516,7 @@ img {
 	padding: 0;
 	width: 37px;
 	height: 46px;
-	position: relative. 
+	position: relative;
 }
 
 .exit svg {
@@ -918,15 +919,16 @@ img {
 	border-radius: 50%;
 	cursor: pointer;
 	position: relative;
+	margin-right: 6px;	
+	margin-left: 6px;	
 }
 
-.dot-page-first {
+.dot-page {
 	background-color: var(--basic-white);
 	position: absolute;
-	margin-right: 12px;	
 }
 
-.dot-page-second {
+.active {
 	position: absolute;
 	background-color: var(--basic-red);	
 }
@@ -939,14 +941,25 @@ img {
 }
 
 .arrow-left {
+	width: 21px;
+	height: 39px; 
+	position: absolute;
 	bottom: 99px;
 	left: 22px;	
+	background-image: url(../img/icons/icon-left.svg);
+	background-repeat: no-repeat;
+	background-color: transparent;
 }
 
 .arrow-right {
-	transform: rotate(180deg);	
+	width: 21px;
+	height: 39px;
+	position: absolute;
+	transform: rotate(180deg);
+	background-image: url(../img/icons/icon-left.svg);
 	bottom: 104px;
-	left: 575px;	
+	left: 575px;
+	background-color: transparent;
 }
 
 .title-container {
@@ -1430,7 +1443,7 @@ img {
 	width: 7px;
 	height: 12px;
 	bottom: 7px;
-	margin-left: 15px;
+	left: 15px;
 	background-image: url(../img/icons/icon-right-small.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -1584,19 +1597,19 @@ img {
 
 .checkbox:checked + label::after {
 	content: "";
-	width: 22px;
+	width: 25px;
 	height: 19px;
 	position: absolute;
-	left: 3px;
-	bottom: 3px;
+	left: 2px;
+	bottom: 2px;
 	background-image: url(../img/icons/icon-checked.svg);
 	background-repeat: no-repeat;	
 }
 
 .filter-input-radio + label::before {
 	content: "";
-	width: 21px;
-	height: 21px;
+	width: 18px;
+	height: 18px;
 	border: 4px solid var(--basic-slategrey);
 	border-radius: 4px;
 	position: absolute;
@@ -1607,13 +1620,13 @@ img {
 
 .filter-input-radio:checked + label::after {
 	content: "";
-	width: 9px;
-	height: 9px;
+	width: 8px;
+	height: 8px;
 	background-color: var(--basic-slategrey);
 	border-radius: 50%;
 	position: absolute;
-	top: 5px;
-	left: 9px;
+	top: 4px;
+	left: 8px;
 }
 
 .range-controls {
@@ -1723,7 +1736,8 @@ img {
 	line-height: 18px;
 	padding-left: 20px;
 	margin: 0;
-	margin-right: 130px;
+	margin-right: 20px;
+	width: 200px;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -1756,9 +1770,6 @@ img {
 	margin-left: 46px;
 } 
 
-.sort-items li:last-child {
-	padding-right: 0;
-}
 
 .sort-item a {	
 	color: var(--basic-transparent-gray);
@@ -1813,6 +1824,7 @@ img {
 
 .page-link-active {
 	background-color: var(--basic-red);	
+	color: var(--basic-white);	
 }
 
 .about-name-drill {
