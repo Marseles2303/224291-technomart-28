@@ -492,15 +492,10 @@ img {
 	margin-right: 10px;	
 }
 
-.login::before {
-	content: "";
+.login svg {
 	position: absolute;
-	width: 20px;
-	height: 17px;
-	background-image: url(../img/icons/icon-login.svg);
-	background-repeat: no-repeat;
-	left: 14px;
 	top: 14px;
+	left: 14px;
 }
 
 .loged {
@@ -509,14 +504,9 @@ img {
 	position: relative; 
 }
 
-.loged::before {
-	content: "";
+.loged svg {
 	position: absolute;
-	width: 20px;
-	height: 18px;
-	background-image: url(../img/icons/icon-user.svg);
-	background-repeat: no-repeat;
-	left: 20px;
+	left: 21px;
 } 
 
 .exit {
@@ -528,13 +518,8 @@ img {
 	position: relative. 
 }
 
-.exit::before {
-	content: "";
+.exit svg {
 	position: absolute;
-	width: 20px;
-	height: 18px;
-	background-image: url(../img/icons/icon-logout.svg);
-	background-repeat: no-repeat;
 	right: 17px;
 	top: 14px;
 }
