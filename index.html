@@ -203,12 +203,12 @@
 						<section class="firms">
 							<ul class="brends">
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/bosch.png" width="126" height="37" alt="банер с логотипом bosch">
 									</a>
 								</li>			   
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/makita.png" width="123" height="40" alt="банер с логотипом makita">
 									</a>
 								</li>
@@ -218,27 +218,27 @@
 									</a>
 								</li>
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" class="interskol" target="_blank">
 										<img src="img/logo-brends/interskol.png" width="200" height="88" alt="банер с логотипом интерскол">
 									</a>
 								</li>
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/hitachi.png" width="169" height="31" alt="банер с логотипом nitachi">
 									</a>
 								</li>
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/lg.png" width="121" height="73" alt="банер с логотипом lg">
 									</a>
 								</li>
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/aeg.png" width="151" height="96" alt="банер с логотипом aeg">
 									</a>
 								</li>
 								<li>
-									<a href="#" tarbtn-green="_blank">
+									<a href="#" target="_blank">
 										<img src="img/logo-brends/metabo.png" width="204" height="69" alt="банер с логотипом metabo">
 									</a>
 								</li>
@@ -387,33 +387,36 @@
 						</div>
 					</div>
 				</footer>
-				<section class="modal-widow-map">
+				<section class="modal modal-widow-map">
 					<h1 class="visibility-hidden">Карта адреса</h1>
 					<img src="img/content/map_popup.png" width="943" height="449" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-					<button type="button" class="close-map" aria-label="закрыть карту"></button>
+					<button type="button" class="close-modal" aria-label="закрыть карту"></button>
 				</section>
-				<section class="write-us-modal">
+				<section class="modal write-us-modal">
 					<h1 class="visibility-hidden">Форма обратной связи</h1>
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<label>Ваше имя:<input type="text" name="first-last-name" placeholder="Имя Фамилия"></label>
-						<label>Ваш e-mail:<input type="email" name="mail" placeholder="email@example.com"></label>
-						<label for="letters-field">Текст письма:</label>
-						<textarea name="writing-letters" id="letters-field" placeholder="В свободной форме">
-						</textarea>				
+					<div class="form-answer">
+						<label class="write-answer"><span>Ваше имя:</span><input type="text" name="first-last-name" placeholder="Имя Фамилия"></label>
+						<label class="write-answer"><span>Ваш e-mail:</span><input type="email" name="mail" placeholder="email@example.com"></label>
+						<div class="enter-text">
+						<label class="write-answer" for="letters-field"><span>Текст письма:</span></label>
+						<textarea name="text" id="letters-field">В свободной форме</textarea>		
+						</div>
+						</div>
 						<div class="grey-box">
-							<button type="submit">Отправить</button>
+							<button class="btn-red to-send" type="submit">Отправить</button>
 						</div>				
 					</form>	
 					<button type="button" class="close-modal" aria-label="закрыть форму"></button>
 				</section>
-				<section class="modal-window-basket">
+				<section class="modal modal-window-basket">
 					<h1 class="visibility-hidden">Добавление товара в корзину</h1>
 					<p class="success">Товар добавлен в корзину!</p>
 					<div class="grey-box">
-						<a href="#">Оформить заказ</a>
-						<button type="button">Продолжить покупки</button>
+						<a class="btn-red placed-order" href="#">Оформить заказ</a>
+						<button class="continue" type="button">Продолжить покупки</button>
 					</div>
-					<button type="button" class="close-modal" aria-label="закрыть форму">закрыть</button>
+					<button type="button" class="close-modal" aria-label="закрыть форму"></button>
 				</section>
 			</body>
 		</html>
