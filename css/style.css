@@ -1455,7 +1455,7 @@ img {
 	background-color: var(--basic-dark-blue);
 }
 
-.switch:active {
+.switch-active {
 	color: var(--basic-purple);
 	background-color: var(--basic-white);
 }
