@@ -45,7 +45,7 @@
 	--basic-gray: #A9A9A9;
 	--basic-light-gray: #E5E5E5;
 	--basic-carrot: #FFBF47;
-    --basic-bright-blue: #3BBCE3;
+	--basic-bright-blue: #3BBCE3;
 	--basic-lilac: #DC91D8;
 	--basic-pale-green: #8ED78F;
 	--basic-yellow: #FFC047;
@@ -66,14 +66,14 @@
 	--basic-color-blue: #212A3A;
 	--basic-color-gray: #ABABAB;
 	--basic-color-shadow: #AEB2BA;
-    --basic-border: rgba(0, 0, 0, 0.0001);
+	--basic-border: rgba(0, 0, 0, 0.0001);
 	--basic-shadow: rgba(0, 0, 0, 0.15);
 	--basic-slategrey: #C5C5C5;
 	--basic-gray-box: #F4F4F4;
 	--basic-sapphire: #161D29;
 	--basic-moderate-blue: #3D546F;
 	--basic-light-black: #B5B5B5;
-    --basic-deep-yellow: #367315;
+	--basic-deep-yellow: #367315;
 	--basic-medium-dark-grey: #444;
 	--basic-very-pale-blue: #cfcfcf;
 }
@@ -437,7 +437,7 @@ img {
 	border: 0;
 }
 
-.label-search:focus-within.search-icon {
+.label-search:focus-within .search-icon {
 	opacity: 1;
 }
 
@@ -579,7 +579,7 @@ img {
 	color: var(--basic-purple);
 	font-size: 14px;
 	line-height: 24px;
-    padding-left: 4px;	
+	padding-left: 4px;	
 }
 
 .user-account {
@@ -905,19 +905,19 @@ img {
 .fb a::before {
 	background-image: url("../img/icons/icon-fb.svg");	
 	top: 9px;
-    left: 7px;
+	left: 7px;
 }
 
 .ig a::before {	
 	background-image: url("../img/icons/icon-insta.svg");
 	top: 8px;
-    left: 8px;
+	left: 8px;
 }
 
 .vk a::before {
 	background-image: url("../img/icons/icon-vk.svg");
 	top: 10px;
-    left: 6px;
+	left: 6px;
 }
 
 .small-text {
@@ -1335,7 +1335,7 @@ img {
 
 .name-drill {
 	margin: 0;
-    margin-bottom: 2px;
+	margin-bottom: 2px;
 }
 
 .no-discount {
@@ -1468,11 +1468,11 @@ img {
 	cursor: pointer;
 }
 
-.switch:not(.switch-active)hover {
+.switch:not(.switch-active):hover {
 	background-color: var(--basic-dark-blue);
 }
 
-.switch:not(.switch-active)active {
+.switch:not(.switch-active):active {
 	color: var(--basic-purple);
 	background-color: var(--basic-white);
 }
@@ -1571,7 +1571,7 @@ img {
 .partners {
 	padding: 0;
 	font-size: 18px;
-    line-height: 21px;
+	line-height: 21px;
 	margin: 0;
 }
 
@@ -1778,7 +1778,7 @@ img {
 	position: relative;
 }
 
-.options-list.filter-checkbox {
+.options-list .filter-checkbox {
 	margin-bottom: 17px;
 }
 
@@ -1961,7 +1961,7 @@ img {
 	padding-top: 10px;
 	padding-right: 16px;
 	padding-bottom: 5px;
-	margin-bottom: 28px;
+	margin-bottom: 27px;
 	border-radius: 5px;
 }
 
@@ -2028,7 +2028,7 @@ img {
 
 .sort-item-active a {
 	color: var(--basic-red);
-    border-color: transparent;
+	border-color: transparent;
 }
 
 .sort-arrow-link:hover path,
@@ -2085,7 +2085,7 @@ img {
 
 .page-link-next {
 	padding-left: 31px;
-    padding-right: 31px;
+	padding-right: 31px;
 }
 
 .page-link-active {
@@ -2122,15 +2122,15 @@ img {
 /* модальные окна */
 
 .modal {
-    display: none;
-    background-color: var(--basic-white);
+	display: none;
+	background-color: var(--basic-white);
 	box-shadow: 0px 4px 20px var(--basic-shadow);
 	position: fixed;
 	top: 100px;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    margin: auto;
+	right: 0;
+	bottom: auto;
+	left: 0;
+	margin: auto;
 	border-top: 7px solid var(--basic-red);
 }
 
@@ -2148,12 +2148,12 @@ img {
 	position: absolute;
 	padding: 0;	
 	top: 7px;
-    right: 8px;
-    width: 29px;
-    height: 27px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+	right: 8px;
+	width: 29px;
+	height: 27px;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
 }
 
 .close-modal::before,
@@ -2191,7 +2191,7 @@ img {
 
 .write-answer {
 	font-size: 18px;
-    line-height: 24px;
+	line-height: 24px;
 	width: 220px;
 }
 
@@ -2209,7 +2209,7 @@ img {
 	border: 2px solid var(--basic-gray);
 	border-radius: 3px;
 	font-size: 13px;
-    line-height: 24px;
+	line-height: 24px;
 	margin-right: 20px;
 	padding-top: 7px;
 	padding-bottom: 7px;
@@ -2229,7 +2229,7 @@ img {
 	border: 2px solid var(--basic-gray);
 	border-radius: 3px;
 	font-size: 13px;
-    line-height: 24px;
+	line-height: 24px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-left: 12px;
@@ -2273,9 +2273,9 @@ img {
 .success {
 	position: relative;
 	font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
 	padding-top: 67px;
 	padding-bottom: 67px;
 	padding-left: 176px;
@@ -2297,7 +2297,7 @@ img {
 .continue {
 	display: inline-block;
 	font-size: 14px;
-    line-height: 18px;
+	line-height: 18px;
 	vertical-align: top;
 	text-align: center;	
 	text-transform: uppercase;
