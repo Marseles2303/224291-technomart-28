@@ -2134,6 +2134,10 @@ img {
 	border-top: 7px solid var(--basic-red);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-widow-map {
 	width: 943px;
 	height: 444px;
